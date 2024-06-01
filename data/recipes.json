@@ -1,0 +1,442 @@
+[
+    {
+        "id": "1",
+        "name": "Zupa pomidorowa",
+        "ingredients": [
+            {
+                "name": "pomidor",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "woda",
+                "quantity": 1,
+                "unit": "ml"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            }
+        ],
+        "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
+        "category": "Zupy"
+    },
+    {
+        "id": "2",
+        "name": "Pierogi ruskie",
+        "ingredients": [
+            {
+                "name": "ziemniaki",
+                "quantity": 3,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "ser biały",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "mąka",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "woda",
+                "quantity": 200,
+                "unit": "ml"
+            }
+        ],
+        "description": "Pierogi ruskie to tradycyjne polskie danie, które składa się z delikatnego ciasta i nadzienia z ziemniaków, cebuli i sera. Są to jedne z najpopularniejszych pierogów w Polsce i cieszą się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
+        "category": "Pierogi"
+    },
+    {
+        "id": "3",
+        "name": "Spaghetti Bolognese",
+        "ingredients": [
+            {
+                "name": "makaron spaghetti",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "mięso mielone",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "sos pomidorowy",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "bazylia",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            },
+            {
+                "name": "parmezan",
+                "quantity": "do posypania",
+                "unit": ""
+            }
+        ],
+        "description": "Spaghetti Bolognese to klasyczne włoskie danie, które składa się z makaronu spaghetti i sosu mięsnego. Jest to jedno z najbardziej popularnych dań kuchni włoskiej i cieszy się dużą popularnością na całym świecie.",
+        "category": "Makarony"
+    },
+    {
+        "id": "4",
+        "name": "Sałatka Cezar",
+        "ingredients": [
+            {
+                "name": "sałata lodowa",
+                "quantity": 1,
+                "unit": "główka"
+            },
+            {
+                "name": "kurczak",
+                "quantity": 1,
+                "unit": "pierś"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "grzanki",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "parmezan",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "sos Cezar",
+                "quantity": 100,
+                "unit": "ml"
+            }
+        ],
+        "description": "Sałatka Cezar to popularne danie kuchni amerykańskiej, które składa się z sałaty lodowej, grillowanego kurczaka, jajek, grzanek, parmezanu i sosu Cezar. Jest to lekka i smaczna sałatka, która doskonale sprawdza się jako danie główne lub przystawka.",
+        "category": "Sałatki"
+    },
+    {
+        "id": "5",
+        "name": "Kotlet schabowy",
+        "ingredients": [
+            {
+                "name": "schab",
+                "quantity": 1,
+                "unit": "kotlet"
+            },
+            {
+                "name": "jajko",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "bułka tarta",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "olej",
+                "quantity": "do smażenia",
+                "unit": ""
+            }
+        ],
+        "description": "Kotlet schabowy to tradycyjne polskie danie, które składa się z panierowanego kotleta z mięsa schabowego. Jest to jedno z najbardziej popularnych dań mięsnych w Polsce i cieszy się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
+        "category": "Mięsa"
+    },
+    {
+        "id": "6",
+        "name": "Tarta z warzywami",
+        "ingredients": [
+            {
+                "name": "ciasto francuskie",
+                "quantity": 1,
+                "unit": "opakowanie"
+            },
+            {
+                "name": "papryka",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "bakłażan",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "cukinia",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "ser żółty",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "bazylia",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            }
+        ],
+        "description": "Tarta z warzywami to lekkie i smaczne danie, które składa się z chrupiącego ciasta francuskiego i warzyw takich jak papryka, bakłażan, cukinia i cebula. Jest to idealne danie dla osób preferujących wegetariańską kuchnię.",
+        "category": "Tarty"
+    },
+    {
+        "id": "7",
+        "name": "Krem z dyni",
+        "ingredients": [
+            {
+                "name": "dynia",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "bulion warzywny",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "śmietana",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "natka pietruszki",
+                "quantity": "do dekoracji",
+                "unit": ""
+            }
+        ],
+        "description": "Krem z dyni to aromatyczne danie, które składa się z puree z dyni, cebuli, czosnku, bulionu warzywnego i śmietany. Jest to idealne danie na chłodne jesienne i zimowe dni.",
+        "category": "Zupy"
+    },
+    {
+        "id": "8",
+        "name": "Risotto z grzybami",
+        "ingredients": [
+            {
+                "name": "ryż arborio",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "grzyby",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "bulion warzywny",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "białe wino",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "parmezan",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "natka pietruszki",
+                "quantity": "do posypania",
+                "unit": ""
+            }
+        ],
+        "description": "Risotto z grzybami to klasyczne włoskie danie, które składa się z ryżu arborio, grzybów, cebuli, czosnku, bulionu warzywnego, białego wina i parmezanu. Jest to aromatyczne i sycące danie, które doskonale sprawdza się jako danie główne.",
+        "category": "Makarony"
+    },
+    {
+        "id": "9",
+        "name": "Krewetki w sosie czosnkowym",
+        "ingredients": [
+            {
+                "name": "krewetki",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "czosnek",
+                "quantity": 4,
+                "unit": "ząbki"
+            },
+            {
+                "name": "masło",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "śmietana",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "sok z cytryny",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "natka pietruszki",
+                "quantity": "do posypania",
+                "unit": ""
+            }
+        ],
+        "description": "Krewetki w sosie czosnkowym to smaczne danie, które składa się z krewetek smażonych na maśle z dodatkiem czosnku, śmietany i soku z cytryny. Jest to danie o intensywnym smaku i aromacie, które doskonale sprawdza się jako przystawka lub danie główne.",
+        "category": "Owoce morza"
+    },
+    {
+        "id": "10",
+        "name": "Tiramisu",
+        "ingredients": [
+            {
+                "name": "biszkopty",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "ser mascarpone",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "cukier",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "kawa espresso",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "kakao",
+                "quantity": "do posypania",
+                "unit": ""
+            }
+        ],
+        "description": "Tiramisu to klasyczne włoskie danie, które składa się z biszkoptów nasączonych kawą, kremu z serka mascarpone i jajek oraz posypane kakao. Jest to deser o delikatnym smaku i kremowej konsystencji, który doskonale kończy każdy posiłek.",
+        "category": "Desery"
+    }
+]

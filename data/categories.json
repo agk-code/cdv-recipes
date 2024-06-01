@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Zupy"
+    },
+    {
+        "id": 2,
+        "name": "Dania główne"
+    },
+    {
+        "id": 3,
+        "name": "Desery"
+    },
+    {
+        "id": 4,
+        "name": "Przekąski"
+    },
+    {
+        "id": 5,
+        "name": "Sałatki"
+    },
+    {
+        "id": 6,
+        "name": "Napoje"
+    }
+]
