@@ -39,7 +39,7 @@ const showRecipes = async () => {
 
     const categoriesHtml = resultCategories.map(category => {
         return `
-            <div class="category">
+            <div class="category category-${category.id}">
                 <a href="${category.link}">
                     <h3>${category.name}</h3>
                 </a>
