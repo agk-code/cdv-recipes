@@ -44,6 +44,8 @@ body {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +55,7 @@ nav {
 }
 
 nav img {
-    width: 50px;
+    width: 250px;
     height: auto;
     margin-right: 10px;
 }
@@ -61,6 +63,7 @@ nav img {
 nav div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 nav input[type="text"] {
@@ -79,6 +82,27 @@ nav button {
     cursor: pointer;
 }
 
+.searchbar {
+    padding: 11.5px !important;
+    border: 1px solid #ccc;
+    border-radius: 6px !important;
+    margin-right: 10px !important;
+}
+
+.searchbar:focus-visible {
+    outline: none;
+}
+
+.search-button {
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
 .category-container {
     width: 100%;
     display: flex;
@@ -87,22 +111,69 @@ nav button {
 }
 
 .category {
+    z-index: 1;
     width: 100px;
-    margin-bottom: 20px;
     padding: 4px;
-    background-color: #f2f2f2;
     border-radius: 5px;
     text-align: center;
 }
 
+.category::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+}
+
+.category:hover::before {
+    transform: rotate(90deg);
+    opacity: 100%;
+}
+
+.category-1::before {
+    background-image: url(../images/zupy.png);
+}
+
+.category-2::before {
+    background-image: url(../images/dania-glowne.png);
+}
+
+.category-3::before {
+    background-image: url(../images/desery.png);
+}
+
+.category-4::before {
+    background-image: url(../images/przekąski.png);
+}
+
+.category-5::before {
+    background-image: url(../images/salatki.png);
+}
+
+.category-6::before {
+    background-image: url(../images/napoje.png);
+}
+
 .category a {
     text-decoration: none;
+    width: -webkit-fill-available;
     color: #333;
+    z-index: 1;
 }
 
 .category h3 {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 3px;
     font-size: 16px;
+    width: 100%;
+    background-color: #f2f2f2;
 }
 
 .main-section {
