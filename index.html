@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/showRecipes.js"></script>
+    <script src="./js/slider.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/slider.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,12 +23,21 @@
         <h1>Recipes</h1>
         <p>Explore our collection of delicious recipes</p>
         
-        <div class="recipes-container" id="recipesContainer">
-
+        <div class="slider-container">
+            <button class="prev">&#x2039;</button>
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="swiperWrapper">
+                    <!-- Slides will be injected here by JavaScript -->
+                </div>
+            </div>
+            <button class="next">&#x203A;</button>
         </div>
+
+        <div class="recipes-container" id="recipesContainer"></div>
     </section>
     <footer>
         <p>&copy; 2024</p>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

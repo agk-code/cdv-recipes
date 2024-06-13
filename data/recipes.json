@@ -2,6 +2,7 @@
     {
         "id": "1",
         "name": "Zupa pomidorowa",
+        "image": "images/recipes/pomidorowa.jpg",
         "ingredients": [
             {
                 "name": "pomidor",
@@ -16,15 +17,17 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             }
         ],
-        "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu. Zupa pomidorowa to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
-        "category": "Zupy"
+        "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
+        "category": "Zupy",
+        "date": "2024-01-01"
     },
     {
         "id": "2",
         "name": "Pierogi ruskie",
+        "image": "images/recipes/ruskie.jpg",
         "ingredients": [
             {
                 "name": "ziemniaki",
@@ -44,12 +47,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "mąka",
@@ -63,11 +66,13 @@
             }
         ],
         "description": "Pierogi ruskie to tradycyjne polskie danie, które składa się z delikatnego ciasta i nadzienia z ziemniaków, cebuli i sera. Są to jedne z najpopularniejszych pierogów w Polsce i cieszą się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
-        "category": "Pierogi"
+        "category": "Pierogi",
+        "date": "2024-02-15"
     },
     {
         "id": "3",
         "name": "Spaghetti Bolognese",
+        "image": "images/recipes/bolognese.webp",
         "ingredients": [
             {
                 "name": "makaron spaghetti",
@@ -97,12 +102,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "bazylia",
@@ -116,11 +121,13 @@
             }
         ],
         "description": "Spaghetti Bolognese to klasyczne włoskie danie, które składa się z makaronu spaghetti i sosu mięsnego. Jest to jedno z najbardziej popularnych dań kuchni włoskiej i cieszy się dużą popularnością na całym świecie.",
-        "category": "Makarony"
+        "category": "Makarony",
+        "date": "2024-03-10"
     },
     {
         "id": "4",
         "name": "Sałatka Cezar",
+        "image": "images/recipes/cezar.jpg",
         "ingredients": [
             {
                 "name": "sałata lodowa",
@@ -154,11 +161,13 @@
             }
         ],
         "description": "Sałatka Cezar to popularne danie kuchni amerykańskiej, które składa się z sałaty lodowej, grillowanego kurczaka, jajek, grzanek, parmezanu i sosu Cezar. Jest to lekka i smaczna sałatka, która doskonale sprawdza się jako danie główne lub przystawka.",
-        "category": "Sałatki"
+        "category": "Sałatki",
+        "date": "2024-04-25"
     },
     {
         "id": "5",
         "name": "Kotlet schabowy",
+        "image": "images/recipes/schabowe.webp",
         "ingredients": [
             {
                 "name": "schab",
@@ -178,12 +187,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "olej",
@@ -192,11 +201,13 @@
             }
         ],
         "description": "Kotlet schabowy to tradycyjne polskie danie, które składa się z panierowanego kotleta z mięsa schabowego. Jest to jedno z najbardziej popularnych dań mięsnych w Polsce i cieszy się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
-        "category": "Mięsa"
+        "category": "Mięsa",
+        "date": "2024-05-20"
     },
     {
         "id": "6",
         "name": "Tarta z warzywami",
+        "image": "images/recipes/tarta-z-warzywami.jpg",
         "ingredients": [
             {
                 "name": "ciasto francuskie",
@@ -231,12 +242,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "bazylia",
@@ -245,11 +256,13 @@
             }
         ],
         "description": "Tarta z warzywami to lekkie i smaczne danie, które składa się z chrupiącego ciasta francuskiego i warzyw takich jak papryka, bakłażan, cukinia i cebula. Jest to idealne danie dla osób preferujących wegetariańską kuchnię.",
-        "category": "Tarty"
+        "category": "Tarty",
+        "date": "2024-06-01"
     },
     {
         "id": "7",
         "name": "Krem z dyni",
+        "image": "images/recipes/zupa-krem-z-dyni.jpg",
         "ingredients": [
             {
                 "name": "dynia",
@@ -279,12 +292,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "natka pietruszki",
@@ -293,11 +306,13 @@
             }
         ],
         "description": "Krem z dyni to aromatyczne danie, które składa się z puree z dyni, cebuli, czosnku, bulionu warzywnego i śmietany. Jest to idealne danie na chłodne jesienne i zimowe dni.",
-        "category": "Zupy"
+        "category": "Zupy",
+        "date": "2024-01-20"
     },
     {
         "id": "8",
         "name": "Risotto z grzybami",
+        "image": "images/recipes/risotto-z-grzybami.webp",
         "ingredients": [
             {
                 "name": "ryż arborio",
@@ -337,12 +352,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "natka pietruszki",
@@ -351,11 +366,13 @@
             }
         ],
         "description": "Risotto z grzybami to klasyczne włoskie danie, które składa się z ryżu arborio, grzybów, cebuli, czosnku, bulionu warzywnego, białego wina i parmezanu. Jest to aromatyczne i sycące danie, które doskonale sprawdza się jako danie główne.",
-        "category": "Makarony"
+        "category": "Makarony",
+        "date": "2024-02-01"
     },
     {
         "id": "9",
         "name": "Krewetki w sosie czosnkowym",
+        "image": "images/recipes/krewetki.webp",
         "ingredients": [
             {
                 "name": "krewetki",
@@ -385,12 +402,12 @@
             {
                 "name": "sól",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "pieprz",
                 "quantity": 1,
-                "unit": ""
+                "unit": "szczypta"
             },
             {
                 "name": "natka pietruszki",
@@ -399,11 +416,13 @@
             }
         ],
         "description": "Krewetki w sosie czosnkowym to smaczne danie, które składa się z krewetek smażonych na maśle z dodatkiem czosnku, śmietany i soku z cytryny. Jest to danie o intensywnym smaku i aromacie, które doskonale sprawdza się jako przystawka lub danie główne.",
-        "category": "Owoce morza"
+        "category": "Owoce morza",
+        "date": "2024-03-25"
     },
     {
         "id": "10",
         "name": "Tiramisu",
+        "image": "images/recipes/tiramisu.jpg",
         "ingredients": [
             {
                 "name": "biszkopty",
@@ -437,6 +456,7 @@
             }
         ],
         "description": "Tiramisu to klasyczne włoskie danie, które składa się z biszkoptów nasączonych kawą, kremu z serka mascarpone i jajek oraz posypane kakao. Jest to deser o delikatnym smaku i kremowej konsystencji, który doskonale kończy każdy posiłek.",
-        "category": "Desery"
+        "category": "Desery",
+        "date": "2024-04-10"
     }
 ]
