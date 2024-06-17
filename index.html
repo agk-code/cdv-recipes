@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/showRecipes.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/showAuthors.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/recipes-grid.css">
+    <link rel="stylesheet" href="./styles/authors-grid.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,9 +23,6 @@
         </div>
     </nav>
     <section class="main-section">
-        <h1>Recipes</h1>
-        <p>Explore our collection of delicious recipes</p>
-        
         <div class="slider-container">
             <button class="prev">&#x2039;</button>
             <div class="swiper-container">
@@ -32,8 +32,12 @@
             </div>
             <button class="next">&#x203A;</button>
         </div>
-
+        <h1>Popularne przepisy</h1>
         <div class="recipes-container" id="recipesContainer"></div>
+        <div class="authors-container-wrap">
+            <h1>Nasi autorzy</h1>
+            <div  class="authors-container" id="authorsContainer"></div>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024</p>

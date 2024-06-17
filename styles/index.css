@@ -6,46 +6,11 @@ body {
     padding: 0;
 }
 
-.recipes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.recipe {
-    width: calc(30% - 20px);
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.recipe a {
-    text-decoration: none;
-    color: #333;
-}
-
-.recipe img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.recipe h2 {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.recipe p {
-    margin-top: 5px;
-    font-size: 14px;
-}
 
 nav {
     position: sticky;
     top: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,12 +145,13 @@ nav button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 50px;
 }
 
 .main-section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 .main-section p {
