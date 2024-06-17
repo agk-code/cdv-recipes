@@ -1,0 +1,127 @@
+.slider-container {
+    display: flex;
+    margin: 30px 20px 60px;
+}
+
+.prev, 
+.next {
+    font-size: 30px;
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    align-self: center;
+    line-height: 0;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    padding: 0 8px 5px 8px;
+    cursor: pointer;
+}
+
+.slider-post {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-post__thumbnail {
+    width: 120%;
+    left: 10%;
+    position: relative;
+}
+
+.slider-image {
+    width: 1040px;
+    height: 530px;
+    object-fit: cover;
+}
+
+.slider-post__info {
+    left: -7%;
+    position: relative;
+    width: 50%;
+    padding: 23px;
+    margin: 30px 0;
+    background-color: #fff;
+}
+
+.slider-post__info .wrap {
+    height: 100%;
+}
+
+.slider-post__info .wrap .wrap-inner {
+    height: 100%;
+}
+
+.slider-post__inner {
+    height: calc(100% - 63px);
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    outline: #e0e0e0 solid 1px;
+    outline-offset: 2px;
+}
+
+.slider-post__meta {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    line-height: 20px;
+}
+
+.slider-post__title {
+    text-align: center;
+    text-decoration: none;
+    transition: color .3s ease;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.slider-post__title a {
+    text-decoration: none;
+    color: black;
+    transition: color .3s ease;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.slider-post__title a:hover {
+    color: #5ba475;
+}
+
+.slider-post__content {
+    text-align: center;
+    text-decoration: none;
+}
+
+.clamped-paragraph {
+    display: -webkit-box;
+    -webkit-line-clamp: 8; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.entry-more-link a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+    padding: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.entry-more-link a:hover {
+    color: #5ba475;
+    border-bottom: 1px solid #5ba47556
+}
+
+.entry-more-link a .rarr {
+    font-family: serif;
+    font-style: normal;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+.entry-more-link a:hover .rarr {
+    transform: translate(5px, 0);
+}

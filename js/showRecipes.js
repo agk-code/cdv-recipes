@@ -18,6 +18,11 @@ const recipes = () => fetch('./data/recipes.json')
         console.error(error);
     });
 
+const getRandomRecipes = (recipes, count) => {
+    const shuffled = recipes.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+};
+
 const showRecipes = async () => {
     const resultRecipes = await recipes();
     const resultCategories = await categories();
@@ -25,7 +30,9 @@ const showRecipes = async () => {
     const recipesContainer = document.querySelector('#recipesContainer');
     const categoriesContainer = document.querySelector('#categoriesContainer');
 
-    const tempHtml = await resultRecipes.map(recipe => {
+    const randomRecipes = getRandomRecipes(resultRecipes, 6);
+
+    const tempHtml = randomRecipes.map(recipe => {
         return `
             <div class="recipe">
                 <a href="${recipe.link}">
@@ -46,8 +53,6 @@ const showRecipes = async () => {
             </div>
         `;
     });
-
-    console.log(tempHtml)
 
     recipesContainer.innerHTML = tempHtml.join('');
     categoriesContainer.innerHTML = categoriesHtml.join('');
