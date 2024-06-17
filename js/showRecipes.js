@@ -35,7 +35,7 @@ const showRecipes = async () => {
     const tempHtml = randomRecipes.map(recipe => {
         return `
             <div class="recipe">
-                <a href="${recipe.link}">
+                <a href="${"recipe.html?id=" + recipe.id}">
                     <img src="${recipe.image}" alt="${recipe.name}">
                     <h2>${recipe.name}</h2>
                     <p>${recipe.description}</p>
