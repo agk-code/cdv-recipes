@@ -23,6 +23,7 @@ const showRecipes = async () => {
 
     const recipeContainers = document.querySelectorAll('.recipes-container');
     const categoriesContainer = document.querySelector('#categoriesContainer');
+    const mobileCategoriesContainer = document.querySelector('#mobileCategoriesContainer');
 
     const categoriesHtml = resultCategories.map(category => {
         return `
@@ -53,6 +54,7 @@ const showRecipes = async () => {
     });
 
     categoriesContainer.innerHTML = categoriesHtml.join('');
+    mobileCategoriesContainer.innerHTML = categoriesHtml.join('');
 };
 
 showRecipes();
