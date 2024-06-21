@@ -126,3 +126,13 @@
 .footer-bottom p a:hover {
     text-decoration: underline;
 }
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-nav, .footer-social, .footer-newsletter, .footer-contact {
+        text-align: center;
+        text-align: -webkit-center;
+    }
+
+}

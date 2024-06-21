@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-
 nav {
     position: sticky;
     top: 0;
@@ -47,6 +46,14 @@ nav button {
     cursor: pointer;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
 .searchbar {
     padding: 11.5px !important;
     border: 1px solid #ccc;
@@ -81,6 +88,7 @@ nav button {
     padding: 4px;
     border-radius: 5px;
     text-align: center;
+    position: relative;
 }
 
 .category::before {
@@ -157,4 +165,116 @@ nav button {
 .main-section p {
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.ad-container {
+    margin: 30px;
+    cursor: pointer;
+    width: 65%;
+    height: 250px;
+    background-image: url(../images/reklama-ikea.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .menu-icon:hover {
+        color: #5ba475;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 0 0 5px 5px;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .mobile-nav.active {
+        display: flex;
+    }
+
+    .mobile-nav.active .mobile-category-container {
+        display: block;
+    }
+
+    .mobile-nav.active .mobile-category-container .category {
+        display: block;
+    }
+
+    .mobile-nav input[type="text"], .searchbar {
+        width: calc(100% - 23px);
+        text-align-last: center;
+        margin: 0 auto !important;
+        padding: 11px 0 !important;
+    }
+
+    .mobile-nav button {
+        width: calc(100% - 23px);
+        margin: 10px 0;
+        border-radius: 6px;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .category h3 {
+        margin: 0;
+    }
+
+    .category-1::before, .category-2::before, .category-3::before, .category-4::before, .category-5::before, .category-6::before {
+        background-size: 0;
+    }
+
+    .main-section {
+        margin: 0 20px;
+    }
+
+    .main-section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .main-section p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .ad-container {
+        width: 100%;
+        height: 200px;
+        background-image: url(../images/reklama-ikea-mobile.png);
+    }
 }

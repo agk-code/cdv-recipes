@@ -66,3 +66,18 @@
     text-align: center;
     margin: 0;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    .authors-container-wrap {
+        padding: 10px;
+    }
+
+    .authors-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+}

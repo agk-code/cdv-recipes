@@ -43,3 +43,16 @@
     margin-top: 5px;
     font-size: 14px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .recipe {
+        width: calc(49% - 20px);
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 16px;
+        text-align: center;
+        transition: ease-in-out 0.3s;
+    }
+}

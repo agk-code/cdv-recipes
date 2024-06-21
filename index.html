@@ -6,6 +6,7 @@
     <script src="./js/showRecipes.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/showAuthors.js"></script>
+    <script src="./js/mobileMenu.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -16,13 +17,19 @@
 </head>
 <body>
     <nav>
-        <img src="./images/logo.png" alt="Logo" />
-        <div class="category-container" id="categoriesContainer"></div>
-        <div>
-            <input type="text" name="searchbar" id="searchbar" class="searchbar" placeholder="Na co masz dziś ochotę?"/>
+        <img src="./images/logo.png" alt="Logo">
+        <div class="category-container desktop-nav" id="categoriesContainer"></div>
+        <div class="desktop-nav">
+            <input type="text" name="searchbar" id="searchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
             <button class="search-button"></button>
         </div>
-    </nav>
+        <div class="menu-icon">☰</div>
+        <div class="mobile-nav">
+            <div class="mobile-category-container" id="mobileCategoriesContainer"></div>
+            <input type="text" name="searchbar" id="mobileSearchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
+            <button class="search-button"></button>
+        </div>
+    </nav>       
     <section class="main-section">
         <div class="slider-container">
             <button class="prev">&#x2039;</button>
@@ -39,6 +46,7 @@
             <h1>Nasi autorzy</h1>
             <div  class="authors-container" id="authorsContainer"></div>
         </div>
+        <div class="ad-container" id="adContainer"></div>
         <h1>Nasze propozycje na lato</h1>
         <div class="recipes-container" id="recipesContainer"></div>
     </section>
