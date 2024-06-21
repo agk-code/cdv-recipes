@@ -458,5 +458,1355 @@
         "description": "Tiramisu to klasyczne włoskie danie, które składa się z biszkoptów nasączonych kawą, kremu z serka mascarpone i jajek oraz posypane kakao. Jest to deser o delikatnym smaku i kremowej konsystencji, który doskonale kończy każdy posiłek.",
         "category": "Desery",
         "date": "2024-04-10"
+    },
+    {
+        "id": "11",
+        "name": "Żurek",
+        "image": "images/recipes/zurek.jpg",
+        "ingredients": [
+            {
+                "name": "żur",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "kiełbasa",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "ziemniaki",
+                "quantity": 3,
+                "unit": ""
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "chrzan",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            }
+        ],
+        "description": "Żurek to tradycyjna polska zupa, której podstawą jest żur. Podawany z kiełbasą, jajkiem i ziemniakami, żurek jest jednym z ulubionych dań wielkanocnych.",
+        "category": "Zupy",
+        "date": "2024-04-01"
+    },
+    {
+        "id": "12",
+        "name": "Placki ziemniaczane",
+        "image": "images/recipes/placki-ziemniaczane.jpg",
+        "ingredients": [
+            {
+                "name": "ziemniaki",
+                "quantity": 4,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "jajko",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "mąka",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "olej",
+                "quantity": "do smażenia",
+                "unit": ""
+            }
+        ],
+        "description": "Placki ziemniaczane to prosty i smaczny przepis na danie z ziemniaków. Są chrupiące na zewnątrz i miękkie w środku, idealne na obiad lub kolację.",
+        "category": "Przekąski",
+        "date": "2024-02-20"
+    },
+    {
+        "id": "13",
+        "name": "Gołąbki",
+        "image": "images/recipes/golabki.jpg",
+        "ingredients": [
+            {
+                "name": "kapusta",
+                "quantity": 1,
+                "unit": "główka"
+            },
+            {
+                "name": "mięso mielone",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "ryż",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "sos pomidorowy",
+                "quantity": 400,
+                "unit": "ml"
+            }
+        ],
+        "description": "Gołąbki to tradycyjne polskie danie składające się z liści kapusty nadziewanych mięsem mielonym i ryżem, duszone w sosie pomidorowym.",
+        "category": "Dania główne",
+        "date": "2024-03-05"
+    },
+    {
+        "id": "14",
+        "name": "Naleśniki z serem",
+        "image": "images/recipes/nalesniki-z-serem.jpg",
+        "ingredients": [
+            {
+                "name": "mleko",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "mąka",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "olej",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "ser biały",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "cukier",
+                "quantity": 2,
+                "unit": "łyżki"
+            }
+        ],
+        "description": "Naleśniki z serem to pyszne danie, które składa się z cienkich placków wypełnionych słodkim serem. Idealne na śniadanie, deser lub kolację.",
+        "category": "Desery",
+        "date": "2024-01-15"
+    },
+    {
+        "id": "15",
+        "name": "Barszcz czerwony",
+        "image": "images/recipes/barszcz-czerwony.jpg",
+        "ingredients": [
+            {
+                "name": "buraki",
+                "quantity": 4,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "bulion warzywny",
+                "quantity": 1,
+                "unit": "l"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "ocet",
+                "quantity": 2,
+                "unit": "łyżki"
+            }
+        ],
+        "description": "Barszcz czerwony to klasyczna polska zupa, której podstawą są buraki. Podawany na gorąco, idealny na wigilijną kolację.",
+        "category": "Zupy",
+        "date": "2024-12-24"
+    },
+    {
+        "id": "16",
+        "name": "Sernik",
+        "image": "images/recipes/sernik.jpg",
+        "ingredients": [
+            {
+                "name": "ser twarogowy",
+                "quantity": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "jajka",
+                "quantity": 5,
+                "unit": ""
+            },
+            {
+                "name": "cukier",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "masło",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "mąka",
+                "quantity": 3,
+                "unit": "łyżki"
+            },
+            {
+                "name": "cukier waniliowy",
+                "quantity": 1,
+                "unit": "opakowanie"
+            },
+            {
+                "name": "skórka pomarańczowa",
+                "quantity": "do smaku",
+                "unit": ""
+            }
+        ],
+        "description": "Sernik to jedno z najbardziej znanych polskich ciast. Składa się z kremowej masy serowej na kruchym spodzie, często z dodatkiem skórki pomarańczowej.",
+        "category": "Desery",
+        "date": "2024-04-15"
+    },
+    {
+        "id": "17",
+        "name": "Kaszotto z warzywami",
+        "image": "images/recipes/kaszotto-z-warzywami.jpg",
+        "ingredients": [
+            {
+                "name": "kasza jęczmienna",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "marchewka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "papryka",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "cukinia",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "bulion warzywny",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "olej",
+                "quantity": 2,
+                "unit": "łyżki"
+            }
+        ],
+        "description": "Kaszotto z warzywami to zdrowe i sycące danie, które składa się z kaszy jęczmiennej i świeżych warzyw. Idealne na obiad lub kolację.",
+        "category": "Dania główne",
+        "date": "2024-05-10"
+    },
+    {
+        "id": "18",
+        "name": "Gulasz węgierski",
+        "image": "images/recipes/gulasz-wegierski.jpg",
+        "ingredients": [
+            {
+                "name": "wołowina",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "cebula",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "papryka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "czosnek",
+                "quantity": 3,
+                "unit": "ząbki"
+            },
+            {
+                "name": "pomidory",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "bulion wołowy",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "papryka słodka",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "papryka ostra",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "olej",
+                "quantity": 2,
+                "unit": "łyżki"
+            }
+        ],
+        "description": "Gulasz węgierski to aromatyczne i pikantne danie z wołowiny, papryki i pomidorów. Podawany z chlebem lub kluskami, doskonale rozgrzewa w chłodne dni.",
+        "category": "Dania główne",
+        "date": "2024-03-30"
+    },
+    {
+        "id": "19",
+        "name": "Pieczeń rzymska",
+        "image": "images/recipes/pieczen-rzymska.jpg",
+        "ingredients": [
+            {
+                "name": "mięso mielone",
+                "quantity": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": ""
+            },
+            {
+                "name": "bułka tarta",
+                "quantity": 3,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "musztarda",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "olej",
+                "quantity": "do smażenia",
+                "unit": ""
+            }
+        ],
+        "description": "Pieczeń rzymska to smaczne danie z mięsa mielonego, jajek i przypraw, pieczone w piekarniku. Idealne na obiad lub kolację.",
+        "category": "Dania główne",
+        "date": "2024-04-05"
+    },
+    {
+        "id": "20",
+        "name": "Makowiec",
+        "image": "images/recipes/makowiec.jpg",
+        "ingredients": [
+            {
+                "name": "mąka",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "mleko",
+                "quantity": 250,
+                "unit": "ml"
+            },
+            {
+                "name": "cukier",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "drożdże",
+                "quantity": 25,
+                "unit": "g"
+            },
+            {
+                "name": "mak",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "masło",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "jajka",
+                "quantity": 2,
+                "unit": ""
+            },
+            {
+                "name": "miód",
+                "quantity": 2,
+                "unit": "łyżki"
+            }
+        ],
+        "description": "Makowiec to tradycyjne polskie ciasto świąteczne, składające się z drożdżowego ciasta i masy makowej. Doskonałe na Boże Narodzenie.",
+        "category": "Desery",
+        "date": "2024-12-25"
+    },  
+    {
+        "id": "21",
+        "name": "Sałatka grecka",
+        "image": "images/recipes/salatka-grecka.jpeg",
+        "ingredients": [
+            {
+                "name": "pomidor",
+                "quantity": 3,
+                "unit": "szt"
+            },
+            {
+                "name": "ogórek",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "cebula czerwona",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "ser feta",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "oliwki",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "oregano",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Sałatka grecka to lekka i orzeźwiająca sałatka, idealna na letnie dni. Składa się z pomidorów, ogórków, czerwonej cebuli, sera feta i oliwek, doprawiona oliwą z oliwek i oregano.",
+        "category": "Sałatki",
+        "date": "2024-06-15"
+    },
+    {
+        "id": "22",
+        "name": "Chłodnik litewski",
+        "image": "images/recipes/chlodnik-litewski.jpg",
+        "ingredients": [
+            {
+                "name": "buraki",
+                "quantity": 3,
+                "unit": "szt"
+            },
+            {
+                "name": "ogórek",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "rzodkiewka",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "koperek",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "kefir",
+                "quantity": 1,
+                "unit": "l"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Chłodnik litewski to idealna zupa na upalne dni. Składa się z buraków, ogórków, rzodkiewki i koperku, zalana kefirem, podawana na zimno.",
+        "category": "Zupy",
+        "date": "2024-07-01"
+    },
+    {
+        "id": "23",
+        "name": "Lemoniada cytrynowa",
+        "image": "images/recipes/lemoniada-cytrynowa.jpg",
+        "ingredients": [
+            {
+                "name": "cytryny",
+                "quantity": 5,
+                "unit": "szt"
+            },
+            {
+                "name": "woda",
+                "quantity": 1,
+                "unit": "l"
+            },
+            {
+                "name": "cukier",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "mięta",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Lemoniada cytrynowa to orzeźwiający napój, idealny na letnie dni. Składa się z soku z cytryn, wody, cukru i mięty, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-06-20"
+    },
+    {
+        "id": "24",
+        "name": "Sałatka z arbuzem i fetą",
+        "image": "images/recipes/salatka-arbuz-feta.jpg",
+        "ingredients": [
+            {
+                "name": "arbuz",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "ser feta",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "mięta",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Sałatka z arbuzem i fetą to orzeźwiające danie na lato. Kombinacja słodkiego arbuza, słonej fety i świeżej mięty tworzy idealne połączenie smaków.",
+        "category": "Sałatki",
+        "date": "2024-07-05"
+    },
+    {
+        "id": "25",
+        "name": "Gazpacho",
+        "image": "images/recipes/gazpacho.jpg",
+        "ingredients": [
+            {
+                "name": "pomidor",
+                "quantity": 6,
+                "unit": "szt"
+            },
+            {
+                "name": "papryka czerwona",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "ogórek",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "cebula",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 3,
+                "unit": "łyżki"
+            },
+            {
+                "name": "ocet winny",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Gazpacho to hiszpańska zupa pomidorowa podawana na zimno. Jest idealnym daniem na upalne letnie dni, orzeźwiająca i pełna smaków.",
+        "category": "Zupy",
+        "date": "2024-07-10"
+    },
+    {
+        "id": "26",
+        "name": "Koktajl truskawkowy",
+        "image": "images/recipes/koktajl-truskawkowy.jpg",
+        "ingredients": [
+            {
+                "name": "truskawki",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "banan",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "jogurt naturalny",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "miód",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Koktajl truskawkowy to szybki i łatwy sposób na orzeźwienie latem. Składa się z truskawek, banana, jogurtu naturalnego i miodu, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-06-25"
+    },
+    {
+        "id": "27",
+        "name": "Sałatka z krewetkami",
+        "image": "images/recipes/salatka-krewetki.jpg",
+        "ingredients": [
+            {
+                "name": "krewetki",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "rukola",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "awokado",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "pomidor",
+                "quantity": 2,
+                "unit": "szt"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sok z cytryny",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Sałatka z krewetkami to lekkie i zdrowe danie idealne na lato. Krewetki, rukola, awokado i pomidory tworzą doskonałe połączenie smaków, doprawione oliwą z oliwek i sokiem z cytryny.",
+        "category": "Sałatki",
+        "date": "2024-07-20"
+    },
+    {
+        "id": "28",
+        "name": "Smoothie mango",
+        "image": "images/recipes/smoothie-mango.jpg",
+        "ingredients": [
+            {
+                "name": "mango",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "banan",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "jogurt naturalny",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "sok pomarańczowy",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Smoothie mango to egzotyczny i orzeźwiający napój, idealny na lato. Składa się z mango, banana, jogurtu naturalnego i soku pomarańczowego, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-06-30"
+    },
+    {
+        "id": "29",
+        "name": "Grillowany łosoś z cytryną",
+        "image": "images/recipes/grillowany-losos.jpg",
+        "ingredients": [
+            {
+                "name": "filet z łososia",
+                "quantity": 2,
+                "unit": "szt"
+            },
+            {
+                "name": "cytryna",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "koperek",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Grillowany łosoś z cytryną to lekkie i zdrowe danie idealne na letnie grillowanie. Łosoś doprawiony czosnkiem, koperkiem i cytryną jest soczysty i pełen smaku.",
+        "category": "Ryby",
+        "date": "2024-07-15"
+    },
+    {
+        "id": "30",
+        "name": "Sorbet malinowy",
+        "image": "images/recipes/sorbet-malinowy.jpg",
+        "ingredients": [
+            {
+                "name": "maliny",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "cukier",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "woda",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "sok z cytryny",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "mięta",
+                "quantity": "do dekoracji",
+                "unit": ""
+            }
+        ],
+        "description": "Sorbet malinowy to orzeźwiający deser idealny na lato. Składa się z malin, cukru i wody, doprawiony sokiem z cytryny, podawany z listkami mięty.",
+        "category": "Desery",
+        "date": "2024-07-25"
+    },
+    {
+        "id": "31",
+        "name": "Caprese",
+        "image": "images/recipes/caprese.jpg",
+        "ingredients": [
+            {
+                "name": "pomidor",
+                "quantity": 3,
+                "unit": "szt"
+            },
+            {
+                "name": "mozzarella",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "bazylia",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól morska",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Caprese to klasyczna włoska sałatka składająca się z pomidorów, mozzarelli i świeżej bazylii, skropiona oliwą z oliwek i przyprawiona solą morską oraz pieprzem.",
+        "category": "Sałatki",
+        "date": "2024-08-01"
+    },
+    {
+        "id": "32",
+        "name": "Smoothie jagodowe",
+        "image": "images/recipes/smoothie-jagodowe.jpg",
+        "ingredients": [
+            {
+                "name": "jagody",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "banan",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "jogurt grecki",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "miód",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Smoothie jagodowe to orzeźwiający napój idealny na lato. Składa się z jagód, banana, jogurtu greckiego i miodu, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-08-05"
+    },
+    {
+        "id": "33",
+        "name": "Sałatka z quinoa",
+        "image": "images/recipes/salatka-quinoa.jpg",
+        "ingredients": [
+            {
+                "name": "quinoa",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "pomidor",
+                "quantity": 2,
+                "unit": "szt"
+            },
+            {
+                "name": "ogórek",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "awokado",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "kukurydza",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "czarna fasola",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "kolendra",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "sok z limonki",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Sałatka z quinoa to zdrowe i pożywne danie, idealne na lato. Składa się z quinoa, pomidorów, ogórka, awokado, kukurydzy i czarnej fasoli, doprawiona sokiem z limonki i oliwą z oliwek.",
+        "category": "Sałatki",
+        "date": "2024-08-10"
+    },
+    {
+        "id": "34",
+        "name": "Sorbet cytrynowy",
+        "image": "images/recipes/sorbet-cytrynowy.jpg",
+        "ingredients": [
+            {
+                "name": "cytryny",
+                "quantity": 6,
+                "unit": "szt"
+            },
+            {
+                "name": "cukier",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "woda",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "mięta",
+                "quantity": "do dekoracji",
+                "unit": ""
+            }
+        ],
+        "description": "Sorbet cytrynowy to orzeźwiający deser, idealny na letnie dni. Składa się z soku z cytryn, cukru i wody, podawany z listkami mięty.",
+        "category": "Desery",
+        "date": "2024-08-15"
+    },
+    {
+        "id": "35",
+        "name": "Grillowane warzywa",
+        "image": "images/recipes/grillowane-warzywa.jpg",
+        "ingredients": [
+            {
+                "name": "papryka",
+                "quantity": 2,
+                "unit": "szt"
+            },
+            {
+                "name": "cukinia",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "bakłażan",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 3,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "zioła prowansalskie",
+                "quantity": 1,
+                "unit": "łyżeczka"
+            }
+        ],
+        "description": "Grillowane warzywa to lekkie i zdrowe danie, idealne na letnie grillowanie. Składa się z papryki, cukinii i bakłażana, doprawione oliwą z oliwek, solą, pieprzem i ziołami prowansalskimi.",
+        "category": "Przekąski",
+        "date": "2024-08-20"
+    },
+    {
+        "id": "36",
+        "name": "Chłodnik z ogórków",
+        "image": "images/recipes/chlodnik-ogorkowy.jpg",
+        "ingredients": [
+            {
+                "name": "ogórki",
+                "quantity": 4,
+                "unit": "szt"
+            },
+            {
+                "name": "jogurt naturalny",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "koperek",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "sok z cytryny",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Chłodnik z ogórków to lekka i orzeźwiająca zupa, idealna na letnie dni. Składa się z ogórków, jogurtu naturalnego, czosnku i koperku, doprawiona sokiem z cytryny.",
+        "category": "Zupy",
+        "date": "2024-08-25"
+    },
+    {
+        "id": "37",
+        "name": "Sałatka z arbuzem i miętą",
+        "image": "images/recipes/salatka-arbuz-mieta.jpg",
+        "ingredients": [
+            {
+                "name": "arbuz",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "mięta",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "feta",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sok z limonki",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Sałatka z arbuzem i miętą to orzeźwiająca i lekka sałatka, idealna na lato. Kombinacja słodkiego arbuza, słonej fety i świeżej mięty tworzy idealne połączenie smaków.",
+        "category": "Sałatki",
+        "date": "2024-08-30"
+    },
+    {
+        "id": "38",
+        "name": "Smoothie arbuzowe",
+        "image": "images/recipes/smoothie-arbuzowe.jpg",
+        "ingredients": [
+            {
+                "name": "arbuz",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "truskawki",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "jogurt naturalny",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "miód",
+                "quantity": 1,
+                "unit": "łyżka"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Smoothie arbuzowe to orzeźwiający napój, idealny na lato. Składa się z arbuza, truskawek, jogurtu naturalnego i miodu, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-08-31"
+    },
+    {
+        "id": "39",
+        "name": "Lemoniada miętowa",
+        "image": "images/recipes/lemoniada-mietowa.jpg",
+        "ingredients": [
+            {
+                "name": "cytryny",
+                "quantity": 4,
+                "unit": "szt"
+            },
+            {
+                "name": "mięta",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "woda",
+                "quantity": 1,
+                "unit": "l"
+            },
+            {
+                "name": "cukier",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "kostki lodu",
+                "quantity": "do podania",
+                "unit": ""
+            }
+        ],
+        "description": "Lemoniada miętowa to orzeźwiający napój, idealny na lato. Składa się z soku z cytryn, świeżej mięty, wody i cukru, podawany z kostkami lodu.",
+        "category": "Napoje",
+        "date": "2024-09-01"
+    },
+    {
+        "id": "40",
+        "name": "Grillowany kurczak z ananasem",
+        "image": "images/recipes/grillowany-kurczak-ananas.jpg",
+        "ingredients": [
+            {
+                "name": "pierś z kurczaka",
+                "quantity": 2,
+                "unit": "szt"
+            },
+            {
+                "name": "ananas",
+                "quantity": 1,
+                "unit": "szt"
+            },
+            {
+                "name": "oliwa z oliwek",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "sok z limonki",
+                "quantity": 2,
+                "unit": "łyżki"
+            },
+            {
+                "name": "czosnek",
+                "quantity": 2,
+                "unit": "ząbki"
+            },
+            {
+                "name": "kolendra",
+                "quantity": 1,
+                "unit": "pęczek"
+            },
+            {
+                "name": "sól",
+                "quantity": 1,
+                "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
+            }
+        ],
+        "description": "Grillowany kurczak z ananasem to lekkie i smaczne danie, idealne na letnie grillowanie. Składa się z grillowanej piersi z kurczaka i kawałków ananasa, doprawionych sokiem z limonki, czosnkiem i kolendrą.",
+        "category": "Dania główne",
+        "date": "2024-09-05"
     }
 ]
