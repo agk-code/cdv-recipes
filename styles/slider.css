@@ -16,6 +16,12 @@
     border: none;
     padding: 0 8px 5px 8px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.prev:hover, 
+.next:hover {
+    background-color: #5ba47581;
 }
 
 .slider-post {
@@ -35,6 +41,12 @@
     width: 1040px;
     height: 530px;
     object-fit: cover;
+    transition: ease-in-out 0.3s;
+}
+
+.slider-image:hover {
+    scale: 1.01;
+    box-shadow: 1px 1px 20px 2px #5ba475;
 }
 
 .slider-post__info {
