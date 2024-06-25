@@ -36,10 +36,13 @@
                 "Smacznego!"
         ],
         "category": "Zupy",
-        "date": "2024-01-01",
-        "tags": ["pomidory", "zupa", "obiad", "danie główne"],
+        "date": "2005-04-02",
+        "tags": ["pomidory", "zupa", "obiad", "danie główne", "szybkie danie", "zdrowe jedzenie", "wegetariańskie", "wegańskie", "bezglutenowe", "bezlaktozowe", "bezmięsne", "bezjajeczne", "danie miesne"],       
         "preparation_time": "30 min",
-        "quantity": "4 porcje",
+        "portions": {
+            "quantity": 4,
+            "unit": "porcje"
+        },
         "author": "Paweł2137"
     },
     {

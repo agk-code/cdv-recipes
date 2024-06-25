@@ -1,6 +1,10 @@
 const recipeId = new URLSearchParams(window.location.search).get('id');
 console.log("Recipe_id: ", recipeId);
 
+if(recipeId === null) {
+    window.location.href = "index.html";
+}
+
 // -------------------------------------------------------------------------------- //
 
 const recipesTab = () => fetch('./data/recipes.json')
@@ -26,45 +30,65 @@ async function getCurrentRecipe() {
 // -------------------------------------------------------------------------------- //
 
 getCurrentRecipe().then((currentRecipe) => {
+    const pageTitle = document.getElementById('pageTitle');
+    pageTitle.innerHTML = `${currentRecipe.name} | Kocham Gotować`;
+
     const imageContainer = document.querySelector('#imageContainer');
     const nameContainer = document.querySelector('#nameContainer');
     const infoContainer = document.querySelector('#infoContainer');
     const tagsContainer = document.querySelector('#tagsContainer');
     const descriptionContainer = document.querySelector('#descriptionContainer');
+    const portionsQuantity = document.querySelector('#portionsQuantity');
     const ingredientsContainer = document.querySelector('#ingredientsContainer');
     const preparationContainer = document.querySelector('#preparationContainer');
 
     imageContainer.innerHTML = `<img src=${currentRecipe.image} alt="Dish" id="recipeImage">`;
     nameContainer.innerHTML = currentRecipe.name;
-    infoContainer.innerHTML = generateinfoList(currentRecipe);
+    infoContainer.innerHTML = generateInfoList(currentRecipe);
     tagsContainer.innerHTML = generateTagsList(currentRecipe.tags);
     descriptionContainer.innerHTML = `<p>${currentRecipe.description}</p>`;
+    portionsQuantity.innerHTML = getPotionQuantity(currentRecipe.portions);
     ingredientsContainer.innerHTML = generateIngredientsList(currentRecipe.ingredients);
     preparationContainer.innerHTML = generatePreparationList(currentRecipe.preparation);
 });
 
 // -------------------------------------------------------------------------------- //
 
-function generateinfoList(recipe) {
+function generateInfoList(recipe) {
     const author = recipe.author;
     const creationDate = new Date(recipe.date);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = creationDate.toLocaleDateString(undefined, options);
     const preparationTime = recipe.preparation_time;
     
     let htmlString = "";
 
     if(author !== undefined) {
-        htmlString += `<p>Author: ${author}</p>`;
+        htmlString += `<li><i class="fa-solid fa-user"></i> ${author}</li>`;
     }
 
     if(creationDate !== undefined) {
-        htmlString += `<p>Creation date: ${creationDate.toLocaleDateString()}</p>`;
+        htmlString += `<li><i class="fa-regular fa-calendar-days"></i> ${formattedDate}</li>`;
     }
 
     if(preparationTime !== undefined) {
-        htmlString += `<p>Preparation time: ${preparationTime} minutes</p>`;
+        htmlString += `<li><i class="fa-solid fa-hourglass-half"></i> ${preparationTime}</li>`;
     }
 
     return htmlString;
+}
+
+// -------------------------------------------------------------------------------- //
+
+function getPotionQuantity(portions) {
+    if(portions === undefined) {
+        return '1 porcje'; // default value
+    }
+
+    const quantity = portions.quantity;
+    const unit = portions.unit;
+
+    return `${quantity} ${unit}`;
 }
 
 
@@ -105,6 +129,12 @@ function generateTagsList(tags) {
 function generatePreparationList(preparation) {
     if (preparation === undefined) {
         return '';
+    }
+
+    if(typeof preparation === "string") {
+        return `
+            <p>${preparation}</p>
+        `;
     }
 
     return preparation.map(step => {

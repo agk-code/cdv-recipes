@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./styles/recipes-grid.css">
     <link rel="stylesheet" href="./styles/authors-grid.css">
     <link rel="stylesheet" href="./styles/recipe-site.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./icons/fontawesome-6.5.2-web/css/all.css">
+    <title id="pageTitle">Kocham Gotować</title>
 </head>
 <body>
     <nav>
@@ -42,6 +43,10 @@
             <div class="recipe-section">
                 <div class="recipe-side-bar">
                     <h2>Potrzebne składniki</h2>
+                    <div class="portions-container">
+                        <li>Ilość na:</li>
+                        <li id="portionsQuantity"></li>
+                    </div>
                     <div class="ingedients-container" id="ingredientsContainer">
                         <!-- Content will be injected here by JavaScript -->
                     </div>

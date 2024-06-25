@@ -49,6 +49,32 @@
 
 /* ---------------------------------------- */
 
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+}
+
+.info-container li {
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.info-container i {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+/* ---------------------------------------- */
+
 .tags-container {
     display: flex;
     justify-content: flex-start;
@@ -56,13 +82,14 @@
     flex-wrap: wrap;
 }
 
-.tags-container li {
+.tags-container li{
     list-style: none;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background-color: var(--tags-background-color);
     border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--tags-background-color);
     padding: 0 15px;
     margin-right: 10px;
 }
@@ -92,7 +119,7 @@
     padding: var(--elements-margin);
     border-radius: var(--blocks-border-radius);
     margin-bottom: var(--elements-margin);
-    width: 75%;
+    width: 70%;
 }
 
 .recipe-text-section h2 {
@@ -130,13 +157,29 @@
     padding: var(--elements-margin);
     border-radius: var(--blocks-border-radius);
     margin-bottom: var(--elements-margin);
-    width: 25%;
+    width: 30%;
     margin-right: var(--elements-margin);
 }
 
 .recipe-side-bar h2 {
     margin: 0;
-    margin-bottom: var(--elements-margin);
+    margin-bottom: calc(var(--elements-margin)/2);
+}
+
+/* ---------------------------------------- */
+
+.portions-container {
+    list-style: none;
+    margin: 0;
+    display: flex; /* Add this line */
+}
+
+.portions-container li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    opacity: 0.75;
 }
 
 /* ---------------------------------------- */
