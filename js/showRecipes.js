@@ -1,20 +1,14 @@
 const categories = () => fetch('./data/categories.json')
     .then(response => response.json())
-    .then(data => {
-        return data;
-    })
+    .then(data => data)
     .catch(error => {
-        // Handle any errors here
         console.error(error);
     });
 
 const recipes = () => fetch('./data/recipes.json')
     .then(response => response.json())
-    .then(data => {
-        return data;
-    })
+    .then(data => data)
     .catch(error => {
-        // Handle any errors here
         console.error(error);
     });
 
@@ -27,22 +21,11 @@ const showRecipes = async () => {
     const resultRecipes = await recipes();
     const resultCategories = await categories();
 
-    const recipesContainer = document.querySelector('#recipesContainer');
+    const recipeContainers = document.querySelectorAll('.recipes-container');
     const categoriesContainer = document.querySelector('#categoriesContainer');
+    const mobileCategoriesContainer = document.querySelector('#mobileCategoriesContainer');
 
     const randomRecipes = getRandomRecipes(resultRecipes, 6);
-
-    const tempHtml = randomRecipes.map(recipe => {
-        return `
-            <div class="recipe">
-                <a href="${"recipe.html?id=" + recipe.id}">
-                    <img src="${recipe.image}" alt="${recipe.name}">
-                    <h2>${recipe.name}</h2>
-                    <p>${recipe.description}</p>
-                </a>
-            </div>
-        `;
-    });
 
     const categoriesHtml = resultCategories.map(category => {
         return `
@@ -54,8 +37,26 @@ const showRecipes = async () => {
         `;
     });
 
-    recipesContainer.innerHTML = tempHtml.join('');
+    recipeContainers.forEach(container => {
+        const randomRecipes = getRandomRecipes(resultRecipes, 6);
+
+        const tempHtml = randomRecipes.map(recipe => {
+            return `
+                <div class="recipe">
+                    <a href="${"recipe.html?id=" + recipe.id}">
+                        <img src="${recipe.image}" alt="${recipe.name}">
+                        <h2>${recipe.name}</h2>
+                        <p>${recipe.description}</p>
+                    </a>
+                </div>
+            `;
+        });
+
+        container.innerHTML = tempHtml.join('');
+    });
+
     categoriesContainer.innerHTML = categoriesHtml.join('');
+    mobileCategoriesContainer.innerHTML = categoriesHtml.join('');
 };
 
 showRecipes();
