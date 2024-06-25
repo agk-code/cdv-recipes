@@ -1,0 +1,117 @@
+:root{
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --tags-background-color: #5ba4752a;
+}
+
+/* ---------------------------------------- */
+
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image-container img {
+    width: 100%;
+    max-height: 512px;
+}
+
+/* ---------------------------------------- */
+
+.recipe-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.recipe-section h1 {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.recipe-section h2 {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------- */
+
+.tags-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tags-container li {
+    list-style: none;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: var(--tags-background-color);
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.tags-container li:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+/* ---------------------------------------- */
+
+.recipe-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.recipe-text-container p {
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+
+.ingedients-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: 16px;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+}
+
+
+.ingedients-container td {
+    text-align: left;
+    vertical-align: center;
+    padding-right: 10px;
+    border-collapse: collapse;
+    border-bottom: 2px dotted #ccc;
+    padding: 5px 0;
+}
+
+.ingedients-container td:first-child {
+    width: 128px
+}
+
+/* ---------------------------------------- */

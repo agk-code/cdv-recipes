@@ -16,10 +16,10 @@ const recipesTab = () => fetch('./data/recipes.json')
 // -------------------------------------------------------------------------------- //
 
 async function getCurrentRecipe() {
-    console.log("Loading current recipe...");
+    // console.log("Loading current recipe...");
     const resultRecipe = await recipesTab();
     const currentRecipe = resultRecipe.find(recipe => recipe.id == recipeId);
-    console.log("Current recipe: ", currentRecipe);
+    // console.log("Current recipe: ", currentRecipe);
     return currentRecipe;
 };
 
@@ -28,39 +28,50 @@ async function getCurrentRecipe() {
 getCurrentRecipe().then((currentRecipe) => {
     const imageContainer = document.querySelector('#imageContainer');
     const nameContainer = document.querySelector('#nameContainer');
+    const tagsContainer = document.querySelector('#tagsContainer');
     const descriptionContainer = document.querySelector('#descriptionContainer');
     const ingredientsContainer = document.querySelector('#ingredientsContainer');
-    const tagsContainer = document.querySelector('#tagsContainer');
+    const preparationContainer = document.querySelector('#preparationContainer');
 
     imageContainer.innerHTML = `<img src=${currentRecipe.image} alt="Dish" id="recipeImage">`;
     nameContainer.innerHTML = currentRecipe.name;
+    tagsContainer.innerHTML = generateTagsList(currentRecipe.tags);
     descriptionContainer.innerHTML = `<p>${currentRecipe.description}</p>`;
-
-    const ingredientsList = generateIngredientsList(currentRecipe.ingredients);
-    ingredientsContainer.innerHTML = ingredientsList.join('');
-
-    const tagsList = generateTagsList(currentRecipe.tags);
-    tagsContainer.innerHTML = tagsList.join('');
+    ingredientsContainer.innerHTML = generateIngredientsList(currentRecipe.ingredients);
+    preparationContainer.innerHTML = `<p>${currentRecipe.preparation}</p>`;
 });
 
 // -------------------------------------------------------------------------------- //
 
 function generateIngredientsList(ingredients) {
-    return ingredients.map(ingredient => {
+    const table_rows = ingredients.map(ingredient => {
         return `
-            <li>${ingredient}</li>
+            <tr>
+                <td>${ingredient.quantity} ${ingredient.unit}</td>
+                <td>${ingredient.name}</td>
+            </tr>
         `;
-    });
+    }).join('');
+
+    return `
+        <table>
+            ${table_rows}
+        </table>
+    `;
 }
+
 
 // -------------------------------------------------------------------------------- //
 
 function generateTagsList(tags) {
+    if (tags === undefined || tags.length === 0) {
+        return '';
+    }
     return tags.map(tag => {
         return `
             <li>${tag}</li>
         `;
-    });
+    }).join('');
 }
 
 // -------------------------------------------------------------------------------- //

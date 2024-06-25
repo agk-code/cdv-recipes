@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/recipes-grid.css">
     <link rel="stylesheet" href="./styles/authors-grid.css">
+    <link rel="stylesheet" href="./styles/recipe-site.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,22 +27,31 @@
             <!-- Image will be injected here by JavaScript -->
         </div>
         <div class="recipe-container" id="recipeContainer">
-            <div class="recipe-header">
+            <div class="recipe-section">
                 <h1 id="nameContainer"></h1>
                 <div class="tags-container" id="tagsContainer">
                     <!-- Content will be injected here by JavaScript -->
                 </div>
+                <div class="recipe-text-container" id="descriptionContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
             </div>
-            <div class="ingedients-container" id="ingredientsContainer">
-                <!-- Content will be injected here by JavaScript -->
+            <div class="recipe-section">
+                <h2>Potrzebne składniki</h2>
+                <div class="ingedients-container" id="ingredientsContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
             </div>
-            <div class="recipe-description" id="descriptionContainer">
-                <!-- Content will be injected here by JavaScript -->
+            <div class="recipe-section">
+                <h2>Przygotowanie</h2>
+                <div class="recipe-text-container" id="preparationContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
             </div>
         </div>
     </section>
-    <section class="other-recipes-section">
-        <h1>Pozostałe przepisy</h1>
+    <section class="main-section">
+        <h1>Polecane przepisy</h1>
         <div class="recipes-container" id="recipesContainer"></div>
     </section>
     <footer>
