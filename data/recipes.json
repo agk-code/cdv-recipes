@@ -26,10 +26,21 @@
             }
         ],
         "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
-        "preparation": "Pomidory sparzamy wrzątkiem, obieramy ze skórki i kroimy w kostkę. Następnie wrzucamy je do garnka, zalewamy wodą i gotujemy na małym ogniu przez około 20 minut. Po tym czasie zupę miksujemy na gładki krem, doprawiamy solą i gotujemy jeszcze przez kilka minut. Podajemy z grzankami lub śmietaną.",
+        "preparation": [
+                "Pomidory sparzamy wrzątkiem, obieramy ze skórki i kroimy w kostkę. Następnie wrzucamy je do garnka, zalewamy wodą i gotujemy na małym ogniu przez około 20 minut. Po tym czasie zupę miksujemy na gładki krem, doprawiamy solą i gotujemy jeszcze przez kilka minut. Podajemy z grzankami lub śmietaną",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a malesuada dui, sit amet condimentum odio. Nam id metus congue, cursus est et, faucibus orci. Proin nec faucibus est. Donec elementum interdum gravida. Nullam vehicula arcu sit amet nisi varius hendrerit. Vivamus lacus quam, lacinia eu fermentum non, dignissim ac leo. Etiam velit ante, vestibulum non gravida at, efficitur eu neque. Maecenas et tempor dolor. Nullam vulputate nec dolor vel ultricies.",
+                "Duis tincidunt risus sed diam iaculis aliquam. Donec lectus elit, pharetra eu orci non, varius suscipit mauris. Aliquam et suscipit libero, vitae scelerisque turpis. Mauris sit amet orci elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper metus non nibh elementum, nec malesuada felis molestie. Etiam porta, dui vestibulum iaculis faucibus, dui orci ultricies tortor, nec pharetra nulla leo a nisi. Aliquam erat volutpat. Phasellus ultrices euismod dolor sit amet gravida. Sed vitae odio quis risus consequat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla a commodo leo. Nulla at venenatis nisi.",
+                "Curabitur aliquam ante non pulvinar consectetur. Morbi sagittis congue pellentesque. Sed et sem aliquet, dapibus nunc bibendum, consequat dui. Nam sed volutpat ante. Quisque molestie tortor eros, eu rhoncus tellus congue sed. Integer nisi erat, vehicula quis auctor in, ultrices vel felis. Morbi id urna vitae sapien convallis pellentesque. Cras nec libero eleifend, lobortis magna interdum, dictum nisi. Donec justo velit, luctus sed libero eu, consequat suscipit eros. Maecenas tempor felis sed eros molestie, porttitor dignissim purus fringilla. Sed eleifend ligula non nisi pharetra, in convallis lectus faucibus. Sed sed tortor tellus. Vivamus venenatis consectetur massa sagittis porta. Aenean a pharetra leo, at viverra lorem. Fusce mattis metus in arcu sodales, vel lacinia nulla ullamcorper.",
+                "Fusce imperdiet ex diam, ac lobortis est tincidunt id. Aliquam quis nunc vitae urna elementum consequat sit amet a ligula. Donec dignissim vitae mauris posuere euismod. Ut maximus facilisis urna, id rutrum magna blandit dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus imperdiet urna finibus est tristique, vitae rhoncus felis placerat. Praesent dignissim est eget scelerisque pretium. Sed dignissim ultricies risus accumsan egestas. Nullam gravida ornare dolor, eu blandit diam.",
+                "Pellentesque at laoreet neque, quis varius augue. Sed eget sapien et nibh vestibulum feugiat. Integer pretium convallis augue, vulputate rhoncus nulla sagittis sed. In hac habitasse platea dictumst. Quisque lorem dolor, pulvinar tincidunt vestibulum eu, dictum tincidunt nisl. Nam fringilla accumsan nisi, ac auctor ex posuere et. Vivamus non sollicitudin ipsum. Nullam sagittis ac massa at dictum. Maecenas dapibus dictum maximus. Morbi dignissim lobortis semper. Proin suscipit maximus feugiat. Sed est risus, tempus ac libero ac, hendrerit fermentum mauris. Integer non erat aliquam, tincidunt ipsum quis, lobortis augue.", 
+                "Smacznego!"
+        ],
         "category": "Zupy",
         "date": "2024-01-01",
-        "tags": ["pomidory", "zupa", "obiad", "danie główne"]
+        "tags": ["pomidory", "zupa", "obiad", "danie główne"],
+        "preparation_time": "30 min",
+        "quantity": "4 porcje",
+        "author": "Paweł2137"
     },
     {
         "id": "2",
