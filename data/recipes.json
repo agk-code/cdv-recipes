@@ -5,24 +5,31 @@
         "image": "images/recipes/pomidorowa.jpg",
         "ingredients": [
             {
-                "name": "pomidor",
+                "name": "pomidory zbierane w pełni księżyca",
                 "quantity": 1,
-                "unit": "szt"
+                "unit": "szt."
             },
             {
-                "name": "woda",
+                "name": "woda z rzeki Ganges",
                 "quantity": 1,
-                "unit": "ml"
+                "unit": "L"
             },
             {
                 "name": "sól",
                 "quantity": 1,
                 "unit": "szczypta"
+            },
+            {
+                "name": "pieprz",
+                "quantity": 1,
+                "unit": "szczypta"
             }
         ],
         "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
+        "preparation": "Pomidory sparzamy wrzątkiem, obieramy ze skórki i kroimy w kostkę. Następnie wrzucamy je do garnka, zalewamy wodą i gotujemy na małym ogniu przez około 20 minut. Po tym czasie zupę miksujemy na gładki krem, doprawiamy solą i gotujemy jeszcze przez kilka minut. Podajemy z grzankami lub śmietaną.",
         "category": "Zupy",
-        "date": "2024-01-01"
+        "date": "2024-01-01",
+        "tags": ["pomidory", "zupa", "obiad", "danie główne"]
     },
     {
         "id": "2",
