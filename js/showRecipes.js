@@ -25,6 +25,8 @@ const showRecipes = async () => {
     const categoriesContainer = document.querySelector('#categoriesContainer');
     const mobileCategoriesContainer = document.querySelector('#mobileCategoriesContainer');
 
+    const randomRecipes = getRandomRecipes(resultRecipes, 6);
+
     const categoriesHtml = resultCategories.map(category => {
         return `
             <div class="category category-${category.id}">
@@ -41,7 +43,7 @@ const showRecipes = async () => {
         const tempHtml = randomRecipes.map(recipe => {
             return `
                 <div class="recipe">
-                    <a href="${recipe.link}">
+                    <a href="${"recipe.html?id=" + recipe.id}">
                         <img src="${recipe.image}" alt="${recipe.name}">
                         <h2>${recipe.name}</h2>
                         <p>${recipe.description}</p>

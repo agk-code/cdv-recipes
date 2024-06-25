@@ -24,13 +24,13 @@ const showSlider = async () => {
                                             <time class="updated" datetime="${recipe.date}">${new Date(recipe.date).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
                                         </div>
                                         <h2 class="entry-title slider-post__title">
-                                            <a href="${recipe.link}">${recipe.name}</a>
+                                            <a href="${"recipe.html?id=" + recipe.id}">${recipe.name}</a>
                                         </h2>
                                     </div>
                                     <div class="slider-post__content">
                                         <p class="clamped-paragraph">${recipe.description}</p>
                                         <div class="entry-more-link">
-                                            <a href="${recipe.link}" class="more-link">Czytaj dalej <span class="rarr">→</span></a>
+                                            <a href="${"recipe.html?id=" + recipe.id}" class="more-link">Czytaj dalej <span class="rarr">→</span></a>
                                         </div>
                                     </div>
                                 </div>

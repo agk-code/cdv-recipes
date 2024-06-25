@@ -1,0 +1,211 @@
+:root{
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --tags-background-color: #5ba4752a;
+
+    --elements-margin: 20px;
+    --blocks-border-radius: 16px;
+}
+
+/* ---------------------------------------- */
+
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--elements-margin);
+}
+
+.main-image-container img {
+    width: 100%;
+    max-height: 512px;
+}
+
+/* ---------------------------------------- */
+
+.recipe-container {
+    width: 80%;
+}
+
+/* ---------------------------------------- */
+
+.recipe-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    padding: var(--elements-margin);
+    border-radius: var(--blocks-border-radius);
+    margin-bottom: var(--elements-margin);
+}
+
+.recipe-title h1 {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: var(--elements-margin);
+}
+
+/* ---------------------------------------- */
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+}
+
+.info-container li {
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.info-container i {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+/* ---------------------------------------- */
+
+.tags-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.tags-container li{
+    list-style: none;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--tags-background-color);
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.tags-container li:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+/* ---------------------------------------- */
+
+.recipe-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ---------------------------------------- */
+
+.recipe-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    padding: var(--elements-margin);
+    border-radius: var(--blocks-border-radius);
+    margin-bottom: var(--elements-margin);
+    width: 70%;
+}
+
+.recipe-text-section h2 {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* ---------------------------------------- */
+
+.recipe-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.recipe-text-container p {
+    margin: 0;
+    padding: 0;
+    margin-top: var(--elements-margin);
+}
+
+/* ---------------------------------------- */
+
+.recipe-side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    padding: var(--elements-margin);
+    border-radius: var(--blocks-border-radius);
+    margin-bottom: var(--elements-margin);
+    width: 30%;
+    margin-right: var(--elements-margin);
+}
+
+.recipe-side-bar h2 {
+    margin: 0;
+    margin-bottom: calc(var(--elements-margin)/2);
+}
+
+/* ---------------------------------------- */
+
+.portions-container {
+    list-style: none;
+    margin: 0;
+    display: flex; /* Add this line */
+}
+
+.portions-container li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    opacity: 0.75;
+}
+
+/* ---------------------------------------- */
+
+.ingedients-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+    padding: 0;
+    margin: 0;
+}
+
+.ingedients-container td {
+    text-align: left;
+    vertical-align: center;
+    padding-right: 10px;
+    border-collapse: collapse;
+    border-bottom: 2px dotted #ccc;
+    padding: 8px 0;
+}
+
+.ingedients-container td:first-child {
+    width: 128px
+}
+
+/* ---------------------------------------- */

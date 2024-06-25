@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/showRecipes.js"></script>
+    <script src="./js/generateRecipeSite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/recipes-grid.css">
+    <link rel="stylesheet" href="./styles/authors-grid.css">
+    <link rel="stylesheet" href="./styles/recipe-site.css">
+    <link rel="stylesheet" href="./icons/fontawesome-6.5.2-web/css/all.css">
+    <title id="pageTitle">Kocham Gotować</title>
+</head>
+<body>
+    <nav>
+        <img src="./images/logo.png" alt="Logo" />
+        <div class="category-container" id="categoriesContainer"></div>
+        <div>
+            <input type="text" name="searchbar" id="searchbar" class="searchbar" placeholder="Na co masz dziś ochotę?"/>
+            <button class="search-button"></button>
+        </div>
+    </nav>
+    <section class="main-section">
+        <div class="main-image-container" id="imageContainer">
+            <!-- Image will be injected here by JavaScript -->
+        </div>
+        <div class="recipe-container" id="recipeContainer">
+            <div class="recipe-title">
+                <h1 id="nameContainer"></h1>
+                <div class="info-container" id="infoContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
+                <div class="tags-container" id="tagsContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
+                <div class="recipe-text-container" id="descriptionContainer">
+                    <!-- Content will be injected here by JavaScript -->
+                </div>
+            </div>
+            <div class="recipe-section">
+                <div class="recipe-side-bar">
+                    <h2>Potrzebne składniki</h2>
+                    <div class="portions-container">
+                        <li>Ilość na:</li>
+                        <li id="portionsQuantity"></li>
+                    </div>
+                    <div class="ingedients-container" id="ingredientsContainer">
+                        <!-- Content will be injected here by JavaScript -->
+                    </div>
+                </div>
+                <div class="recipe-text-section">
+                    <h2>Przygotowanie</h2>
+                    <div class="recipe-text-container" id="preparationContainer">
+                        <!-- Content will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-section">
+        <h1>Polecane przepisy</h1>
+        <div class="recipes-container" id="recipesContainer"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>
