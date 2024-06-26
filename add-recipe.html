@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/showRecipes.js"></script>
     <script src="./js/mobileMenu.js"></script>
-    <script src="./js/addNewRecipe.js"></script>
+    <script src="./js/addRecipePageEvents.js"></script>
+    <script src="./js/addRecipePageInject.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/recipes-grid.css">
     <link rel="stylesheet" href="./styles/authors-grid.css">
+    <link rel="stylesheet" href="./styles/recipe-site.css">
     <link rel="stylesheet" href="./styles/add-recipe.css">
     <link rel="stylesheet" href="./icons/fontawesome-6.5.2-web/css/all.css">
     <title id="pageTitle">Kocham Gotować</title>
@@ -41,15 +43,32 @@
             </div>
             <div class="basic-info-container">
                 <h3>Czas przygotowania: </h3>
-                <input type="text" name="recipeTime" id="recipeTime" class="recipe-time">
+                <div class="double-input-container">
+                    <input type="number" name="recipeTime" id="recipeTime" class="recipe-time" min="1" max="120">
+                    <select name="recipeTimeUnit" id="recipeTimeUnit" class="recipe-time-unit">
+                        <option value="min">minuty</option>
+                        <option value="h">godziny</option>
+                        <option value="dni">dni</option>
+                    </select>
+                </div>
             </div>
             <div class="basic-info-container">
                 <h3>Ilość porcji: </h3>
-                <input type="text" name="recipePortions" id="recipePortions" class="recipe-portions">
+                <div class="double-input-container">
+                    <input type="number" name="recipePortions" id="recipePortions" class="recipe-portions" min="1" max="100">
+                    <select name="recipePortionsUnit" id="recipePortionsUnit" class="recipe-portions-unit">
+                        <option value="porcje">porcje</option>
+                        <option value="sztuk">sztuk</option>
+                        <option value="osóby">osóby</option>
+                    </select>
+                </div>
             </div>
             <div class="basic-info-container">
                 <h3>Kategoria: </h3>
-                <input type="combobox" name="recipeCategory" id="recipeCategory" class="recipe-category">
+                <select name="recipeCategory" id="recipeCategory" class="recipe-category">
+                    <option>Brak</option>
+                    <!-- Categories will be injected here by JavaScript -->
+                </select>
             </div>
             <div class="basic-info-container">
                 <h3>Opis: </h3>
@@ -59,7 +78,11 @@
         <div class="new-recipe-section">
             <h2>Dodaj zdjęcie</h2>
             <div class="image-upload-container" id="addImageContainer">
-                <!-- Image will be injected here by JavaScript -->
+                <div class="image-upload-area" id="imageUploadArea">
+                    <i class="fa-solid fa-image"></i>
+                    <img src="" alt="Zdjęcie">
+                </div>
+                <input type="file" name="image" id="image" class="image-upload" accept="image/*">
             </div>
         </div>
         <div class="new-recipe-section">
@@ -67,26 +90,38 @@
             <div class="tags-container" id="tagsContainer">
                 <!-- Tags will be injected here by JavaScript -->
             </div>
-            <input type="text" name="tags" id="tags" class="tags" placeholder="Dodaj tag">
-            <button class="add-button" id="addTagButton">Dodaj</button>
+            <div class="tags-container-input">
+                <input type="text" name="tags" id="tags" placeholder="Dodaj tag">
+                <button class="add-button" id="addTagButton">Dodaj</button>
+            </div>
         </div>
         <div class="new-recipe-section">
             <h2>Składniki</h2>
             <div class="ingredients-container" id="ingredientsContainer">
                 <!-- Ingredients will be injected here by JavaScript -->
             </div>
-            <input type="text" name="tags" id="tags" class="tags" placeholder="Nazwa składnika">
-            <input type="text" name="tags" id="tags" class="tags" placeholder="Ilość">
-            <input type="combobox" name="tags" id="tags" class="tags" placeholder="Jednostka">
-            <button class="add-button" id="addIngredientButton">Dodaj</button>
+            <div class="ingredients-input-container">
+                <input type="text" name="ingredient" id="ingredientsContainer" placeholder="Składnik">
+                <input type="number" name="ingredientQuantity" id="ingredientQuantity" placeholder="Ilość" min="1" max="1000">
+                <select name="ingredientUnit" id="ingredientUnit" class="ingredient-unit">
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="ml">ml</option>
+                    <option value="L">L</option>
+                    <option value="szt.">szt.</option>
+                </select>
+                <button class="add-button" id="addIngredientButton">Dodaj</button>
+            </div>
         </div>
         <div class="new-recipe-section">
             <h2>Przygotowanie</h2>
             <div class="preparation-container" id="preparationContainer">
                 <!-- Preparation steps will be injected here by JavaScript -->
             </div>
-            <textarea name="tags" id="tags" class="tags" placeholder="Krok przygotowania"></textarea>
-            <button class="add-button" id="addPreparationButton">Dodaj</button>
+            <div class="preparation-input-container">
+                <textarea name="tags" id="tags" class="tags" placeholder="Krok przygotowania"></textarea>
+                <button class="add-button" id="addPreparationButton">Dodaj</button>
+            </div>
         </div>
     </section>
     <section class="main-section">

@@ -1,13 +1,26 @@
 :root{
     --background-color: #f2f2f2;
     --text-color: #333;
-    --tags-background-color: #5ba4752a;
+    --theme-color: #5ba4752a;
 
     --elements-margin: 20px;
     --blocks-border-radius: 16px;
 
-    --basic-container-height: 32px;
-    --basic-container-border-radius: 5px;
+    --input-container-height: 32px;
+    --container-border-radius: 6px;
+}
+
+/* ---------------------------------------- */
+
+input, select {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 /* ---------------------------------------- */
@@ -33,6 +46,32 @@
     margin-bottom: var(--elements-margin);
 }
 
+.new-recipe-section input{
+    border-radius: var(--container-border-radius);
+    border: 1px solid #ccc;
+    height: var(--input-container-height);
+    line-height: var(--input-container-height);
+    padding: 0;
+    padding-left: 10px;
+}
+
+.new-recipe-section select {
+    border-radius: var(--container-border-radius);
+    border: 1px solid #ccc;
+    height: var(--input-container-height);
+    line-height: var(--input-container-height);
+    padding: 0 10px;
+    margin: 0;
+}
+
+.new-recipe-section textarea {
+    padding: 10px;
+    border-radius: var(--container-border-radius);
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+}
+
 /* ---------------------------------------- */
 
 .basic-info-container {
@@ -51,32 +90,170 @@
     color: var(--text-color);
     margin: 0;
     margin-right: var(--elements-margin);
-    height: var(--basic-container-height);
-    line-height: var(--basic-container-height);
+    height: var(--input-container-height);
+    line-height: var(--input-container-height);
 }
 
 .basic-info-container input {
     width: 250px;
-    border-radius: var(--basic-container-border-radius);
-    border: 1px solid #ccc;
-    height: var(--basic-container-height);
-    line-height: var(--basic-container-height);
-    padding: 0 10px;
+}
+
+.basic-info-container select {
+    width: 250px;
 }
 
 .basic-info-container textarea {
     width: calc(100% - 180px - 2*var(--elements-margin));
-    padding: 10px;
-    border-radius: var(--basic-container-border-radius);
-    border: 1px solid #ccc;
-    height: calc(3*var(--basic-container-height));
-    padding: 10px;
-    resize: none;
+    height: calc(3*var(--input-container-height));
 }
 
 /* ---------------------------------------- */
 
+.double-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+    margin: 0;
+    padding: 0;
+    height: var(--input-container-height);
+}
 
+.double-input-container * {
+    border-radius: var(--container-border-radius);
+    border: 1px solid #ccc;
+    height: 100%;
+    line-height: var(--input-container-height);
+    padding: 0 10px;
+    margin-right: calc(var(--elements-margin)/2);
+}
+
+.double-input-container input {
+    width: 50px;
+    padding-right: 0;
+}
+
+.double-input-container select {
+    width: 100px;
+}
+
+/* ---------------------------------------- */
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: var(--elements-margin);
+}
+
+.image-upload-container input {
+    width: 400px;
+}
+
+.image-upload-area {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: var(--container-border-radius);
+    margin-right: calc(var(--elements-margin)/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.image-upload-area i {
+    font-size: 50px;
+    color: #ccc;
+}
+
+.image-upload-area img {
+    display: none;
+}
+
+/* ---------------------------------------- */
+
+.add-button {
+    width: 80px;
+    height: var(--input-container-height);
+    line-height: var(--input-container-height);
+    border: none;
+    border-radius: var(--container-border-radius);
+    background-color: var(--theme-color);
+    font-weight: 600;
+}
+
+.add-button:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.add-button:active {
+    transform: scale(0.95);
+    transition-duration: 0.1s;
+    opacity: 0.5;
+}
+
+/* ---------------------------------------- */
+
+.tags-container-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 0;
+}
+
+.tags-container-input input {
+    width: 200px;
+    margin-right: calc(var(--elements-margin)/2);
+}
+
+/* ---------------------------------------- */
+
+.ingredients-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+    margin-top: var(--elements-margin);
+}
+
+.ingredients-input-container * {
+    width: 80px;
+    margin-right: calc(var(--elements-margin)/2);
+}
+
+.ingredients-input-container :first-child {
+    width: 200px;
+}
+
+.ingredients-input-container :last-child {
+    margin-right: 0;
+    margin-left: calc(var(--elements-margin)/2);
+}
+
+/* ---------------------------------------- */
+
+.preparation-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+    margin-top: var(--elements-margin);
+}
+
+.preparation-input-container textarea {
+    height: calc(5*var(--input-container-height));
+    margin-bottom: calc(var(--elements-margin)/2);
+}
 
 /* ---------------------------------------- */
 
