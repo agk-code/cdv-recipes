@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/recipes-grid.css">
     <link rel="stylesheet" href="./styles/authors-grid.css">
-    <title>Kocham gotować</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -30,26 +29,33 @@
             <input type="text" name="searchbar" id="mobileSearchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
             <button class="search-button"></button>
         </div>
-    </nav>       
-    <section class="main-section">
-        <div class="slider-container">
-            <button class="prev">&#x2039;</button>
-            <div class="swiper-container">
-                <div class="swiper-wrapper" id="swiperWrapper">
-                    <!-- Slides will be injected here by JavaScript -->
+    </nav>
+    <section>
+        <main>
+            <div class="author-info">
+                <img src="./images/author.jpg" alt="Author Image">
+                <h1>John Doe</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet tincidunt, elit nunc tincidunt nunc, a lacinia nunc nisl id nunc. Sed euismod, nisl ac aliquet tincidunt, elit nunc tincidunt nunc, a lacinia nunc nisl id nunc.</p>
+            </div>
+            <div class="author-recipes">
+                <h2>Recipes by John Doe</h2>
+                <div class="recipe-card">
+                    <img src="./images/recipe1.jpg" alt="Recipe Image">
+                    <h3>Recipe 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="./images/recipe2.jpg" alt="Recipe Image">
+                    <h3>Recipe 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="./images/recipe3.jpg" alt="Recipe Image">
+                    <h3>Recipe 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
-            <button class="next">&#x203A;</button>
-        </div>
-        <h1>Popularne przepisy</h1>
-        <div class="recipes-container" id="recipesContainer"></div>
-        <div class="authors-container-wrap">
-            <h1>Nasi autorzy</h1>
-            <div  class="authors-container" id="authorsContainer"></div>
-        </div>
-        <div class="ad-container" id="adContainer"></div>
-        <h1>Nasze propozycje na lato</h1>
-        <div class="recipes-container" id="recipesContainer"></div>
+        </main>
     </section>
     <footer class="footer">
         <div class="footer-container">
