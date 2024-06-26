@@ -1,26 +1,32 @@
 [
     {
         "id": 1,
-        "name": "Zupy"
+        "name": "Zupy",
+        "slug": "zupy"
     },
     {
         "id": 2,
-        "name": "Dania główne"
+        "name": "Dania główne",
+        "slug": "dania-glowne"
     },
     {
         "id": 3,
-        "name": "Desery"
+        "name": "Desery",
+        "slug": "desery"
     },
     {
         "id": 4,
-        "name": "Przekąski"
+        "name": "Przekąski",
+        "slug": "przekaski"
     },
     {
         "id": 5,
-        "name": "Sałatki"
+        "name": "Sałatki",
+        "slug": "salatki"
     },
     {
         "id": 6,
-        "name": "Napoje"
+        "name": "Napoje",
+        "slug": "napoje"
     }
 ]

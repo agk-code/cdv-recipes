@@ -17,7 +17,21 @@ const getRandomRecipes = (recipes, count) => {
     return shuffled.slice(0, count);
 };
 
-const showRecipes = async () => {
+const generateRecipes = (recipes) => {
+    return recipes.map(recipe => (
+        `
+            <div class="recipe">
+                <a href="${"recipe.html?id=" + recipe.id}">
+                    <img src="${recipe.image}" alt="${recipe.name}">
+                    <h2>${recipe.name}</h2>
+                    <p>${recipe.description}</p>
+                </a>
+            </div>
+        `
+    ));
+}
+
+const showRecipes = async (params) => {
     const resultRecipes = await recipes();
     const resultCategories = await categories();
 
@@ -25,38 +39,81 @@ const showRecipes = async () => {
     const categoriesContainer = document.querySelector('#categoriesContainer');
     const mobileCategoriesContainer = document.querySelector('#mobileCategoriesContainer');
 
-    const randomRecipes = getRandomRecipes(resultRecipes, 6);
-
     const categoriesHtml = resultCategories.map(category => {
         return `
             <div class="category category-${category.id}">
-                <a href="${category.link}">
+                <a href="/category.html?category=${category.slug}">
                     <h3>${category.name}</h3>
                 </a>
             </div>
         `;
     });
 
-    recipeContainers.forEach(container => {
-        const randomRecipes = getRandomRecipes(resultRecipes, 6);
+    if (params?.category !== undefined)
+    {    
+        const { category } = params;
+        const filteredRecipes = resultRecipes.filter(recipe => recipe.category.toLowerCase() === category);
 
-        const tempHtml = randomRecipes.map(recipe => {
-            return `
-                <div class="recipe">
-                    <a href="${"recipe.html?id=" + recipe.id}">
-                        <img src="${recipe.image}" alt="${recipe.name}">
-                        <h2>${recipe.name}</h2>
-                        <p>${recipe.description}</p>
-                    </a>
-                </div>
-            `;
+        if (filteredRecipes.length === 0)
+        {
+            recipeContainers[0].innerHTML = '<h2>Nie znaleziono przepisów</h2>';
+            return;
+        }
+
+        const tempHtml = generateRecipes(filteredRecipes);
+
+        recipeContainers[0].innerHTML = tempHtml.join('');
+    }
+    else if (params?.query !== undefined)
+    {
+        const { query } = params;
+        const filteredRecipes = resultRecipes.filter(recipe => recipe.name.toLowerCase().includes(query.toLowerCase()));
+
+        if (filteredRecipes.length === 0)
+        {
+            recipeContainers[0].innerHTML = '<h2>Nie znaleziono przepisów</h2>';
+            return;
+        }
+
+        const tempHtml = generateRecipes(filteredRecipes);
+
+        recipeContainers[0].innerHTML = tempHtml.join('');
+    }
+    else 
+    {
+        recipeContainers.forEach(container => {
+            const randomRecipes = getRandomRecipes(resultRecipes, 6);
+    
+            const tempHtml = generateRecipes(randomRecipes)
+    
+            container.innerHTML = tempHtml.join('');
         });
-
-        container.innerHTML = tempHtml.join('');
-    });
-
+    }
+    
     categoriesContainer.innerHTML = categoriesHtml.join('');
     mobileCategoriesContainer.innerHTML = categoriesHtml.join('');
 };
 
-showRecipes();
+if (window.location.href.includes('category.html'))
+{
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category === null)
+    {
+        window.location.href = "index.html";
+    }
+    showRecipes({ category });
+} else if (window.location.href.includes('search.html'))
+{
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('query');
+    if (query === null)
+    {
+        window.location.href = "index.html";
+    }
+    showRecipes({ query });
+}
+else 
+{
+    showRecipes();
+}

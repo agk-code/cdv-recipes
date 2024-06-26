@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category</title>
+  <title>Search</title>
   <script src="./js/showRecipes.js"></script>
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/recipes-grid.css">
-  <link rel="stylesheet" href="./styles/category.css">
+  <link rel="stylesheet" href="./styles/search.css">
 </head>
 <body>
   <nav>
@@ -28,9 +28,13 @@
     </div>
   </nav>   
 
-  <section class="category-section">
+  <section class="search-section">
     <h1></h1>
-    <script src="./js/generateCategoryTitle.js"></script>
+    <script>
+      const searchParams = new URLSearchParams(window.location.search);
+      const query = searchParams.get('query');
+      document.querySelector('h1').textContent = `Wyniki wyszukiwania dla: ${query}`;
+    </script>
     <div class="recipes-container" id="recipesContainer"></div>
   </section>
 
