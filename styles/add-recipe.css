@@ -1,0 +1,97 @@
+:root{
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --tags-background-color: #5ba4752a;
+
+    --elements-margin: 20px;
+    --blocks-border-radius: 16px;
+
+    --basic-container-height: 32px;
+    --basic-container-border-radius: 5px;
+}
+
+/* ---------------------------------------- */
+
+.main-section h1 {
+    font-weight: 600;
+}
+
+/* ---------------------------------------- */
+
+.new-recipe-section {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: var(--blocks-border-radius);
+    margin-bottom: var(--elements-margin);
+    width: 80%;
+}
+
+.new-recipe-section h2 {
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: var(--elements-margin);
+}
+
+/* ---------------------------------------- */
+
+.basic-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: var(--background-color);
+    border-radius: var(--blocks-border-radius);
+    margin-top: var(--elements-margin);
+}
+
+.basic-info-container h3 {
+    width: 180px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    margin-right: var(--elements-margin);
+    height: var(--basic-container-height);
+    line-height: var(--basic-container-height);
+}
+
+.basic-info-container input {
+    width: 250px;
+    border-radius: var(--basic-container-border-radius);
+    border: 1px solid #ccc;
+    height: var(--basic-container-height);
+    line-height: var(--basic-container-height);
+    padding: 0 10px;
+}
+
+.basic-info-container textarea {
+    width: calc(100% - 180px - 2*var(--elements-margin));
+    padding: 10px;
+    border-radius: var(--basic-container-border-radius);
+    border: 1px solid #ccc;
+    height: calc(3*var(--basic-container-height));
+    padding: 10px;
+    resize: none;
+}
+
+/* ---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+
+@media (max-width: 900px) {
+    .new-recipe-section {
+        width: calc(100% - 2*var(--elements-margin));
+    }
+
+    .basic-info-container {
+        flex-direction: column;
+    }
+
+    .basic-info-container textarea {
+        width: calc(100% - var(--elements-margin));
+    }
+}
+
+/* ---------------------------------------- */

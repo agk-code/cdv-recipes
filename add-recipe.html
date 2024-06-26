@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/showRecipes.js"></script>
+    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/addNewRecipe.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/recipes-grid.css">
+    <link rel="stylesheet" href="./styles/authors-grid.css">
+    <link rel="stylesheet" href="./styles/add-recipe.css">
+    <link rel="stylesheet" href="./icons/fontawesome-6.5.2-web/css/all.css">
+    <title id="pageTitle">Kocham Gotować</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="./images/logo.png" alt="Logo"></a>
+        <div class="category-container desktop-nav" id="categoriesContainer"></div>
+        <div class="desktop-nav">
+            <input type="text" name="searchbar" id="searchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
+            <button class="search-button"></button>
+        </div>
+        <div class="menu-icon">☰</div>
+        <div class="mobile-nav">
+            <div class="mobile-category-container" id="mobileCategoriesContainer"></div>
+            <input type="text" name="searchbar" id="mobileSearchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
+            <button class="search-button"></button>
+        </div>
+    </nav>   
+    <section class="main-section">
+        <h1>Dodaj nowy przepis</h1>
+        <div class="new-recipe-section">
+            <h2>Podstawowe informacje</h2>
+            <div class="basic-info-container">
+                <h3>Nazwa: </h3>
+                <input type="text" name="recipeName" id="recipeName" class="recipe-name">
+            </div>
+            <div class="basic-info-container">
+                <h3>Czas przygotowania: </h3>
+                <input type="text" name="recipeTime" id="recipeTime" class="recipe-time">
+            </div>
+            <div class="basic-info-container">
+                <h3>Ilość porcji: </h3>
+                <input type="text" name="recipePortions" id="recipePortions" class="recipe-portions">
+            </div>
+            <div class="basic-info-container">
+                <h3>Kategoria: </h3>
+                <input type="combobox" name="recipeCategory" id="recipeCategory" class="recipe-category">
+            </div>
+            <div class="basic-info-container">
+                <h3>Opis: </h3>
+                <textarea name="recipeDescription" id="recipeDescription" class="recipe-description"></textarea>
+            </div>
+        </div>
+        <div class="new-recipe-section">
+            <h2>Dodaj zdjęcie</h2>
+            <div class="image-upload-container" id="addImageContainer">
+                <!-- Image will be injected here by JavaScript -->
+            </div>
+        </div>
+        <div class="new-recipe-section">
+            <h2>Tagi</h2>
+            <div class="tags-container" id="tagsContainer">
+                <!-- Tags will be injected here by JavaScript -->
+            </div>
+            <input type="text" name="tags" id="tags" class="tags" placeholder="Dodaj tag">
+            <button class="add-button" id="addTagButton">Dodaj</button>
+        </div>
+        <div class="new-recipe-section">
+            <h2>Składniki</h2>
+            <div class="ingredients-container" id="ingredientsContainer">
+                <!-- Ingredients will be injected here by JavaScript -->
+            </div>
+            <input type="text" name="tags" id="tags" class="tags" placeholder="Nazwa składnika">
+            <input type="text" name="tags" id="tags" class="tags" placeholder="Ilość">
+            <input type="combobox" name="tags" id="tags" class="tags" placeholder="Jednostka">
+            <button class="add-button" id="addIngredientButton">Dodaj</button>
+        </div>
+        <div class="new-recipe-section">
+            <h2>Przygotowanie</h2>
+            <div class="preparation-container" id="preparationContainer">
+                <!-- Preparation steps will be injected here by JavaScript -->
+            </div>
+            <textarea name="tags" id="tags" class="tags" placeholder="Krok przygotowania"></textarea>
+            <button class="add-button" id="addPreparationButton">Dodaj</button>
+        </div>
+    </section>
+    <section class="main-section">
+        <h1>Polecane przepisy</h1>
+        <div class="recipes-container" id="recipesContainer"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Kocham Gotować Logo">
+            </div>
+            <div class="footer-nav">
+                <h3>Nawigacja</h3>
+                <ul>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#recipes">Przepisy</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Śledź nas</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Zapisz się do naszego newslettera, aby otrzymywać najnowsze przepisy i aktualizacje.</p>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Twój Email" required>
+                    <button type="submit">Zapisz się</button>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>Email: <a href="mailto:info@kochamgotowac.com">info@kochamgotowac.com</a></p>
+                <p>Telefon: +48 123 456 789</p>
+                <p>Adres: Ul. Kulinarnych Pasji 1, 00-001 Warszawa, Polska</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kocham Gotować. Wszelkie prawa zastrzeżone.</p>
+            <p>Projekt strony: <a href="https://yourwebsite.com" target="_blank">Grupa 1</a></p>
+        </div>
+    </footer>
+</body>
+</html>
