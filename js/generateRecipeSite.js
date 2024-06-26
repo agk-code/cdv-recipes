@@ -30,8 +30,7 @@ async function getCurrentRecipe() {
 // -------------------------------------------------------------------------------- //
 
 getCurrentRecipe().then((currentRecipe) => {
-    const pageTitle = document.getElementById('pageTitle');
-    pageTitle.innerHTML = `${currentRecipe.name} | Kocham Gotować`;
+    injectRecipeNameToTitleAndURL(currentRecipe);
 
     const imageContainer = document.querySelector('#imageContainer');
     const nameContainer = document.querySelector('#nameContainer');
@@ -142,6 +141,22 @@ function generatePreparationList(preparation) {
             <p>${step}</p>
         `;
     }).join('');
+}
+
+// -------------------------------------------------------------------------------- //
+
+function injectRecipeNameToTitleAndURL(recipe) {
+    const pageTitle = document.getElementById('pageTitle');
+    pageTitle.innerHTML = `${recipe.name} | Kocham Gotować`;
+
+    // It not necessary to add recipe name to URL but it's lokking better for users
+    const recipeNameURL = new URLSearchParams(window.location.search).get('name');
+    const correctRecipeName = recipe.name.replace(/\s+/g, '-').toLowerCase();
+    console.log("Recipe_name: ", recipeNameURL);
+    
+    if(recipeNameURL === null || recipeNameURL !== correctRecipeName) {
+        window.history.replaceState({}, document.title, `?id=${recipe.id}&name=${correctRecipeName}`);
+    }
 }
 
 // -------------------------------------------------------------------------------- //
