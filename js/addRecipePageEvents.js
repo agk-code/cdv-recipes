@@ -5,8 +5,10 @@ function main() {
     pageTitle.innerHTML = "Dodaj przepis | Kocham Gotować";
 
     bacicInfoEventsListeners();
+    imageEventsListeners();
     tagsEventsListeners();
     ingredientsEventsListeners();
+    preparationEventsListeners();
 }
 
 // -------------------------------------------------------------------------------- //
@@ -37,7 +39,41 @@ function bacicInfoEventsListeners() {
 
 // -------------------------------------------------------------------------------- //
 
+function imageEventsListeners() {
+    document.getElementById("imageUploadArea").addEventListener("click", () => {
+        document.getElementById("recipeImageInput").click();
+    });
+
+    document.getElementById("recipeImageInput").addEventListener("change", () => {
+        console.log("Image changed");
+        const image = document.getElementById("recipeImageInput").files[0];
+        const imagePreview = document.getElementById("recipeImagePreview");
+        const reader = new FileReader();
+
+        reader.onload = () => {
+            console.log("Image loaded");
+            imagePreview.src = reader.result;
+            document.getElementById("imageUploadArea").className = "image-upload-area-uploaded";
+        }
+
+        if(image) {
+            reader.readAsDataURL(image);
+        }
+    });
+
+}
+
+
+// -------------------------------------------------------------------------------- //
+
 function tagsEventsListeners() {
+    document.getElementById("tagInputField").addEventListener("keypress", (e) => {
+        if(e.key === "Enter") {
+            e.preventDefault();
+            document.getElementById("addTagButton").click();
+        }
+    });
+
     document.getElementById("addTagButton").addEventListener("click", () => {
         const tagInput = document.getElementById("tagInputField");
         const tag_str = tagInput.value;
@@ -50,6 +86,7 @@ function tagsEventsListeners() {
             tag.innerHTML = `<li>${tag_str}</li>`;
 
             const button = document.createElement("button");
+            button.className = "remove-element-button";
             button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
             button.addEventListener("click", removeTagEvent);
             tag.appendChild(button);
@@ -89,24 +126,64 @@ function ingredientsEventsListeners() {
             }
 
             const table = ingredientsContainer.children[0];
-            const row = table.insertRow(-1);
+            
+            // Create a new row
+            const row_html_str = `
+            <tr>
+                <td>${ingredientQuantity} ${ingredientUnit}</td>
+                <td>${ingredientName}</td>
+            </tr>
+            `;
+            const row = document.createElement("tr");
+            row.innerHTML = row_html_str;
+            
+            // Add a button to remove the ingredient
+            const button = document.createElement("button");
+            button.className = "remove-element-button";
+            button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+            button.addEventListener("click", removeIngredientEvent);
+            row.appendChild(button);
 
-            const cell1 = row.insertCell(0);
-            const cell2 = row.insertCell(1);
-            const cell3 = row.insertCell(2);
-            cell1.innerHTML = ingredientName;
-            cell2.innerHTML = ingredientQuantity; // TODO:  Quantity + Unit
-            cell3.innerHTML = ingredientUnit; // TODO:  Delete button
+            // TODO: Add a button to edit the ingredient order on the list
+
+            // Add new row to the table
+            table.appendChild(row);
+
+            // Clear the input fields
+            ingredientNameContainer.value = "";
+            ingredientQuantityContainer.value = "";
         }
-
-        ingredientNameContainer.value = "";
-        ingredientQuantityContainer.value = "";
     });
 }
 
 function removeIngredientEvent() {
     const ingredient = this.parentElement;
     ingredient.remove();
+}
+
+// -------------------------------------------------------------------------------- //
+
+function preparationEventsListeners(){
+    document.getElementById("addPreparationStepButton").addEventListener("click", () => {
+        const preparationStepArea = document.getElementById("preparationStepInputArea");
+
+        const new_step = document.createElement("div");
+        new_step.className = "single-preparation-step-container";
+        new_step.innerHTML = `<span role="textbox" contenteditable></span>`;
+
+        const button = document.createElement("button");
+        button.className = "remove-element-button";
+        button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+        button.addEventListener("click", removePreparationStepEvent);
+
+        new_step.appendChild(button);
+        preparationStepArea.appendChild(new_step);
+    });
+}
+
+function removePreparationStepEvent() {
+    const step = this.parentElement;
+    step.remove();
 }
 
 // -------------------------------------------------------------------------------- //

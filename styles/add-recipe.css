@@ -2,6 +2,7 @@
     --background-color: #f2f2f2;
     --text-color: #333;
     --theme-color: #5ba4752a;
+    --theme-color-hover: #5ba47564;
 
     --elements-margin: 20px;
     --blocks-border-radius: 16px;
@@ -43,7 +44,6 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 600;
     color: var(--text-color);
     margin: 0;
-    margin-bottom: var(--elements-margin);
 }
 
 .new-recipe-section input{
@@ -180,6 +180,28 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
 }
 
+.image-upload-area-uploaded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: var(--container-border-radius);
+    margin-right: calc(var(--elements-margin)/2);
+    background-color: #fff;
+}
+
+.image-upload-area-uploaded i {
+    display: none;
+}
+
+.image-upload-area-uploaded img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* ---------------------------------------- */
 
 .add-button {
@@ -193,17 +215,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .add-button:hover {
-    transform: scale(1.05);
+    background-color: var(--theme-color-hover);
     transition-duration: 0.3s;
 }
 
 .add-button:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
     transition-duration: 0.1s;
     opacity: 0.5;
 }
 
 /* ---------------------------------------- */
+
+.tags-container {
+    margin-top: var(--elements-margin);
+}
 
 .single-tag-container {
     display: flex;
@@ -217,23 +243,26 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-.single-tag-container button {
+/* ---------------------------------------- */
+
+.remove-element-button {
     border: none;
     border-radius: 10px;
     padding: 0 10px;
     height: 35px;
-    line-height: 35px;
+    line-height: 37px;
     opacity: 0.5;
 }
 
-.single-tag-container button:hover {
+.remove-element-button:hover {
     opacity: 1;
     transition-duration: 0.3s;
 }
 
-.single-tag-container button:active {
+.remove-element-button:active {
     color: #ccc;
     transition-duration: 0.1s;
+    transform: scale(0.90);
 }
 
 /* ---------------------------------------- */
@@ -277,6 +306,10 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: calc(var(--elements-margin)/2);
 }
 
+.ingedients-container button {
+    margin-top: 10px;
+}
+
 /* ---------------------------------------- */
 
 .preparation-input-container {
@@ -289,9 +322,36 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: var(--elements-margin);
 }
 
-.preparation-input-container textarea {
-    height: calc(5*var(--input-container-height));
+.single-preparation-step-container {
     margin-bottom: calc(var(--elements-margin)/2);
+    position: relative;
+}
+
+.single-preparation-step-container span {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: var(--container-border-radius);
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(100% - var(--elements-margin));
+    min-height: calc(3*var(--input-container-height));
+    background-color: #fff;
+}
+
+.single-preparation-step-container button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff0;
+}
+
+.preparation-input-container-button {
+    margin-top: 0;
+}
+
+.preparation-input-container-button button {
+    width: 180px;
 }
 
 /* ---------------------------------------- */

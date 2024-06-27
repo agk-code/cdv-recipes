@@ -58,7 +58,7 @@
                     <input type="number" name="recipePortions" id="recipePortions" class="recipe-portions" min="1" max="100">
                     <select name="recipePortionsUnit" id="recipePortionsUnit" class="recipe-portions-unit">
                         <option value="porcje">porcje</option>
-                        <option value="sztuk">sztuk</option>
+                        <option value="sztuk">sztuki</option>
                         <option value="osóby">osóby</option>
                     </select>
                 </div>
@@ -76,13 +76,13 @@
             </div>
         </div>
         <div class="new-recipe-section">
-            <h2>Dodaj zdjęcie</h2>
+            <h2>Zdjęcie</h2>
             <div class="image-upload-container" id="addImageContainer">
                 <div class="image-upload-area" id="imageUploadArea">
                     <i class="fa-solid fa-image"></i>
-                    <img src="" alt="Zdjęcie">
+                    <img src="" alt="Preview" id="recipeImagePreview">
                 </div>
-                <input type="file" name="image" id="image" class="image-upload" accept="image/*">
+                <input type="file" id="recipeImageInput" class="image-upload" accept=".jpg, .jpeg, .png">
             </div>
         </div>
         <div class="new-recipe-section">
@@ -97,7 +97,7 @@
         </div>
         <div class="new-recipe-section">
             <h2>Składniki</h2>
-            <div class="ingredients-container" id="ingredientsContainer">
+            <div class="ingedients-container" id="ingredientsContainer">
                 <!-- Ingredients will be injected here by JavaScript -->
             </div>
             <div class="ingredients-input-container">
@@ -115,12 +115,14 @@
         </div>
         <div class="new-recipe-section">
             <h2>Przygotowanie</h2>
-            <div class="preparation-container" id="preparationContainer">
+            <div class="preparation-input-container" id="preparationStepInputArea">
+                <div class="single-preparation-step-container">
+                    <span role="textbox" contenteditable></span>
+                </div>
                 <!-- Preparation steps will be injected here by JavaScript -->
             </div>
-            <div class="preparation-input-container">
-                <textarea name="tags" id="tags" class="tags" placeholder="Krok przygotowania"></textarea>
-                <button class="add-button" id="addPreparationButton">Dodaj</button>
+            <div class="preparation-input-container preparation-input-container-button">
+                <button class="add-button" id="addPreparationStepButton">Dodaj następny krok</button>
             </div>
         </div>
     </section>
