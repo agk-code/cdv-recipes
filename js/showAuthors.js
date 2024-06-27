@@ -19,7 +19,7 @@ const showAuthors = async () => {
 
         return `
                 <div class="author">
-                    <a href="${author.link}" class="entry-more-link">
+                    <a href="/cdv-recipes/author-showcase.html?id=${author.id}" class="entry-more-link">
                     <div class="authors-avatar">
                         <div class="our-authors__icon">
                             <i class="icon icon-verified"></i>
