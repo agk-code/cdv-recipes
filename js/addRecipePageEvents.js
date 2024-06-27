@@ -60,9 +60,7 @@ function imageEventsListeners() {
             reader.readAsDataURL(image);
         }
     });
-
 }
-
 
 // -------------------------------------------------------------------------------- //
 

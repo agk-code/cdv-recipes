@@ -74,6 +74,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* ---------------------------------------- */
 
+.remove-background {
+    background-color: transparent;
+}
+
+/* ---------------------------------------- */
+
 .basic-info-container {
     display: flex;
     flex-direction: row;
@@ -352,6 +358,25 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .preparation-input-container-button button {
     width: 180px;
+}
+
+/* ---------------------------------------- */
+
+.save-recipe-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-recipe-button-container button {
+    width: 250px;
+    height: 64px;
+    font-size: 16px;
+}
+
+.save-recipe-button-container button i {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 /* ---------------------------------------- */
