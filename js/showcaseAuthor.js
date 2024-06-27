@@ -14,12 +14,6 @@ if(currentAuthorId === null) {
     window.location.href = "index.html";
 }
 
-const categories = () => fetch('./data/categories.json')
-    .then(response => response.json())
-    .then(data => data)
-    .catch(error => {
-        console.error(error);
-    });
 
 const recipes = () => fetch('./data/recipes.json')
     .then(response => response.json())
@@ -38,7 +32,8 @@ const getAuthorsRecipes = (recipes, currentAuthorId) => {
 
 
 const generateRecipes = (recipes) => {
-    return recipes.objects.map(recipe => (
+    console.log("Recipes for generation: ", recipes);
+    return Object.values(recipes).map(recipe => (
         `
             <div class="recipe">
                 <a href="${"recipe.html?id=" + recipe.id}">
