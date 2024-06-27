@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/showRecipes.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/showAuthors.js"></script>
+    <script src="./js/showcaseAuthor.js"></script>
     <script src="./js/mobileMenu.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/recipes-grid.css">
-    <link rel="stylesheet" href="./styles/authors-grid.css">
-    <title>Kocham gotować</title>
+    <link rel="stylesheet" href="./styles/author-showcase-grid.css">
+    <title class="title-container"></title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 </head>
 <body>
     <nav>
-        <a href="/">
-            <img src="./images/logo.png" alt="Logo">
-        </a>
+        <img src="./images/logo.png" alt="Logo">
         <div class="category-container desktop-nav" id="categoriesContainer"></div>
         <div class="desktop-nav">
             <input type="text" name="searchbar" id="searchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
@@ -32,26 +28,11 @@
             <input type="text" name="searchbar" id="mobileSearchbar" class="searchbar" placeholder="Na co masz dziś ochotę?">
             <button class="search-button"></button>
         </div>
-    </nav>       
-    <section class="main-section">
-        <div class="slider-container">
-            <button class="prev">&#x2039;</button>
-            <div class="swiper-container">
-                <div class="swiper-wrapper" id="swiperWrapper">
-                    <!-- Slides will be injected here by JavaScript -->
-                </div>
-            </div>
-            <button class="next">&#x203A;</button>
+    </nav>
+    <section>
+        <div class="author-showcase-container" id="authorShowcaseContainer">
+            <!-- Author info will be injected here by JavaScript -->
         </div>
-        <h1>Popularne przepisy</h1>
-        <div class="recipes-container" id="recipesContainer"></div>
-        <div class="authors-container-wrap">
-            <h1>Nasi autorzy</h1>
-            <div  class="authors-container" id="authorsContainer"></div>
-        </div>
-        <div class="ad-container" id="adContainer"></div>
-        <h1>Nasze propozycje na lato</h1>
-        <div class="recipes-container" id="recipesContainer"></div>
     </section>
     <footer class="footer">
         <div class="footer-container">
@@ -98,6 +79,5 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/search.js"></script>
 </body>
 </html>
