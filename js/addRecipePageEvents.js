@@ -5,6 +5,8 @@ function main() {
     pageTitle.innerHTML = "Dodaj przepis | Kocham Gotować";
 
     bacicInfoEventsListeners();
+    tagsEventsListeners();
+    ingredientsEventsListeners();
 }
 
 // -------------------------------------------------------------------------------- //
@@ -36,29 +38,75 @@ function bacicInfoEventsListeners() {
 // -------------------------------------------------------------------------------- //
 
 function tagsEventsListeners() {
-    const tagsContainer = document.getElementById("tagsContainer");
-    const tagsInput = document.getElementById("tagsInput");
-    const tagsList = document.getElementById("tagsList");
+    document.getElementById("addTagButton").addEventListener("click", () => {
+        const tagInput = document.getElementById("tagInputField");
+        const tag_str = tagInput.value;
+        console.log("New tag: ", tag_str);
 
-    tagsInput.addEventListener("keyup", (event) => {
-        if(event.key === "Enter") {
-            const value = tagsInput.value;
-            if(value.length > 0) {
-                const tag = document.createElement("div");
-                tag.classList.add("tag");
-                tag.innerHTML = value;
-                tagsList.appendChild(tag);
-                tagsInput.value = "";
-            }
-        }
-    });
+        if(tag_str !== "") {
+            const tagsContainer = document.getElementById("tagsContainer");
+            const tag = document.createElement("div");
+            tag.className = "single-tag-container";
+            tag.innerHTML = `<li>${tag_str}</li>`;
 
-    tagsList.addEventListener("click", (event) => {
-        if(event.target.classList.contains("tag")) {
-            tagsList.removeChild(event.target);
+            const button = document.createElement("button");
+            button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+            button.addEventListener("click", removeTagEvent);
+            tag.appendChild(button);
+
+            tagsContainer.appendChild(tag);
+            tagInput.value = "";
         }
     });
 }
 
+function removeTagEvent() {
+    const tag = this.parentElement;
+    tag.remove();
+}
+
+// -------------------------------------------------------------------------------- //
+
+function ingredientsEventsListeners() {
+    document.getElementById("addIngredientButton").addEventListener("click", () => {
+        const ingredientNameContainer = document.getElementById("ingredientInputFieldName");
+        const ingredientQuantityContainer = document.getElementById("ingredientInputFieldQuantity");
+        const ingredientUnitContainer = document.getElementById("ingredientInputFieldUnit");
+
+        const ingredientName = ingredientNameContainer.value;
+        const ingredientQuantity = ingredientQuantityContainer.value;
+        const ingredientUnit = ingredientUnitContainer.value;
+
+        console.log("New ingredient: ", ingredientName, ingredientQuantity, ingredientUnit);
+
+        if(ingredientName !== "" && ingredientQuantity !== "" && ingredientUnit !== "") {
+            const ingredientsContainer = document.getElementById("ingredientsContainer");
+            if (ingredientsContainer.childElementCount === 0) {
+                ingredientsContainer.innerHTML = "";
+                const new_table = document.createElement("table");
+                new_table.className = "ingredients-table";
+                ingredientsContainer.appendChild(new_table);
+            }
+
+            const table = ingredientsContainer.children[0];
+            const row = table.insertRow(-1);
+
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            cell1.innerHTML = ingredientName;
+            cell2.innerHTML = ingredientQuantity; // TODO:  Quantity + Unit
+            cell3.innerHTML = ingredientUnit; // TODO:  Delete button
+        }
+
+        ingredientNameContainer.value = "";
+        ingredientQuantityContainer.value = "";
+    });
+}
+
+function removeIngredientEvent() {
+    const ingredient = this.parentElement;
+    ingredient.remove();
+}
 
 // -------------------------------------------------------------------------------- //

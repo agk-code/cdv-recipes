@@ -150,7 +150,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .image-upload-container input {
-    width: 400px;
+    width: 400px; 
+    height: var(--input-container-height);
+    margin-top: calc(var(--elements-margin)/2);
+}
+
+.image-upload-container ::file-selector-button {
+    display: none;
 }
 
 .image-upload-area {
@@ -195,6 +201,39 @@ input[type="number"]::-webkit-outer-spin-button {
     transform: scale(0.95);
     transition-duration: 0.1s;
     opacity: 0.5;
+}
+
+/* ---------------------------------------- */
+
+.single-tag-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.single-tag-container li {
+    margin: 0;
+}
+
+.single-tag-container button {
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    opacity: 0.5;
+}
+
+.single-tag-container button:hover {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.single-tag-container button:active {
+    color: #ccc;
+    transition-duration: 0.1s;
 }
 
 /* ---------------------------------------- */
