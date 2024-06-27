@@ -4,6 +4,8 @@
     flex-wrap: nowrap;
     align-items: center;
     padding: 40px;
+    margin: 40px;;
+    color: #333;
 }
 
 .author a {
@@ -18,10 +20,15 @@
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    padding: 20px;
 }
 
 .authors-avatar {
     grid-area: 1 / 1 / 5 / 3;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .author-name {
@@ -29,6 +36,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #dbdbdb;
+    border: #dbdbdb solid 1px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .author-citation {
@@ -36,6 +47,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #dbdbdb;
+    border: #dbdbdb solid 1px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 
@@ -52,6 +67,11 @@
 .author-biography {
     text-align: left;
     margin: 10px 10%;
+    background-color: #dbdbdb;
+    border-radius: 16px;
+    border: #dbdbdb solid 1px;
+    border-radius: 8px;
+    padding: 40px;
 }
 
 /* Mobile Styles */

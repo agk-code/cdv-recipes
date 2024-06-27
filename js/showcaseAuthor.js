@@ -14,6 +14,55 @@ if(currentAuthorId === null) {
     window.location.href = "index.html";
 }
 
+const categories = () => fetch('./data/categories.json')
+    .then(response => response.json())
+    .then(data => data)
+    .catch(error => {
+        console.error(error);
+    });
+
+const recipes = () => fetch('./data/recipes.json')
+    .then(response => response.json())
+    .then(data => data)
+    .catch(error => {
+        console.error(error);
+    });
+
+
+
+const getAuthorsRecipes = (recipes, currentAuthorId) => {
+    const selected = recipes.find(recipe => recipe.authorId == currentAuthorId);
+    console.log("Selected: ", selected);
+    return selected;
+};
+
+
+const generateRecipes = (recipes) => {
+    return recipes.objects.map(recipe => (
+        `
+            <div class="recipe">
+                <a href="${"recipe.html?id=" + recipe.id}">
+                    <img src="${recipe.image}" alt="${recipe.name}">
+                    <h2>${recipe.name}</h2>
+                    <p>${recipe.description}</p>
+                </a>
+            </div>
+        `
+    ));
+};
+
+const showRecipes = async () => {
+    const resultRecipes = await recipes();
+    const authorRecipes = getAuthorsRecipes(resultRecipes, currentAuthorId);
+
+    const recipeContainers = document.querySelectorAll('.recipes-container');
+
+    const recipesHtml = generateRecipes(authorRecipes);
+
+    recipeContainers[0].innerHTML = recipesHtml.join('');
+
+};
+
 const showAuthor = async () => {
     const resultAuthors = await authors();
     
@@ -46,4 +95,6 @@ const showAuthor = async () => {
     const authorsContainer = document.querySelector('#authorShowcaseContainer');
     authorsContainer.innerHTML = authorsHtml;
 })());
+
+showRecipes();
 
