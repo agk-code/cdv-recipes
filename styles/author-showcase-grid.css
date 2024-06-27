@@ -1,0 +1,70 @@
+.author {
+    display: flex;
+    flex-direction: column;;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 40px;
+}
+
+.author a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.avatar-with-citation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.authors-avatar {
+    grid-area: 1 / 1 / 5 / 3;
+}
+
+.author-name {
+    grid-area: 1 / 3 / 3 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-citation {
+    grid-area: 3 / 3 / 5 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.author-picture {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+}
+
+.author-name {
+    margin: 10px;
+}
+
+.author-biography {
+    text-align: left;
+    margin: 10px 10%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    .authors-container-wrap {
+        padding: 10px;
+    }
+
+    .authors-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+}
