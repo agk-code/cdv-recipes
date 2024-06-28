@@ -31,7 +31,7 @@ const generateRecipes = (recipes) => {
     ));
 }
 
-const showRecipes = async (params) => {
+const showRecipes = async (params, activeFilters) => {
     const resultRecipes = await recipes();
     const resultCategories = await categories();
 
@@ -49,13 +49,21 @@ const showRecipes = async (params) => {
         `;
     });
 
-    if (params?.category !== undefined)
-    {    
+    if (params?.category !== undefined) {
         const { category } = params;
-        const filteredRecipes = resultRecipes.filter(recipe => recipe.category.toLowerCase() === category);
+        // Filter recipes by category and active filters
+        const filteredRecipes = resultRecipes.filter(recipe => {
+            return recipe.category.toLowerCase() === category && 
+            ((!activeFilters || activeFilters.length === 0) || 
+            activeFilters.every(filter => 
+                recipe.ingredients.some(ingredient => 
+                ingredient.name.toLowerCase() === filter.toLowerCase()
+                )
+            )
+            );
+        });
 
-        if (filteredRecipes.length === 0)
-        {
+        if (filteredRecipes.length === 0) {
             recipeContainers[0].innerHTML = '<h2>Nie znaleziono przepisów</h2>';
             return;
         }
@@ -63,8 +71,7 @@ const showRecipes = async (params) => {
         const tempHtml = generateRecipes(filteredRecipes);
 
         recipeContainers[0].innerHTML = tempHtml.join('');
-    }
-    else if (params?.query !== undefined)
+    } else if (params?.query !== undefined)
     {
         const { query } = params;
         const filteredRecipes = resultRecipes.filter(recipe => recipe.name.toLowerCase().includes(query.toLowerCase()));
