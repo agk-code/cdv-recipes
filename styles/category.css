@@ -2,3 +2,82 @@
   text-align: center;
   width: 100%;
 }
+
+/* Base styles for the category section container */
+.category-section--container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styles for the filters container */
+.filters-container {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.filters-container h2 {
+  margin-bottom: 10px;
+}
+
+/* Styles for the filter group */
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-group label {
+  margin-right: 10px;
+}
+
+.filter-button {
+  padding: 8px 12px;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #d7d7d7;
+}
+
+.filter-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .filter-group {
+    display: none;
+  }
+  .filter-group.active {
+    display: block;
+  }
+
+  .filter-group label {
+      margin-bottom: 10px;
+  }
+
+.filters-header {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.filters-header::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.filters-header.active::after {
+  transform: rotate(180deg);
+}
+}

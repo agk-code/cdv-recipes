@@ -31,7 +31,17 @@
   <section class="category-section">
     <h1></h1>
     <script src="./js/generateCategoryTitle.js"></script>
-    <div class="recipes-container" id="recipesContainer"></div>
+    <div class="category-section--container">
+      <div class="filters-container">
+        <h2 class="filters-header">Filtry</h2>
+        <div class="filter-group">
+          <label for="ingredient">Składniki:</label>
+          <button class="filter-button active" id="allIngredients">Wszystkie</button>
+        </div>
+      </div>
+      <script src="./js/filters.js"></script>
+      <div class="recipes-container" id="recipesContainer"></div>
+    </div>
   </section>
 
   <footer class="footer">
