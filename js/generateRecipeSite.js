@@ -30,6 +30,11 @@ async function getCurrentRecipe() {
 
     const resultRecipe = await recipesTab();
     const currentRecipe = resultRecipe.find(recipe => recipe.id == recipeId);
+    if (currentRecipe === undefined) {
+        console.error("Recipe not found");
+        window.location.href = "index.html";
+    }
+
     return currentRecipe;
 };
 
@@ -98,7 +103,6 @@ function getPotionQuantity(portions) {
 
     return `${quantity} ${unit}`;
 }
-
 
 // -------------------------------------------------------------------------------- //
 
