@@ -115,6 +115,20 @@
     transition-duration: 0.3s;
 }
 
+.tags-container li:active {
+    transform: scale(1);
+    transition-duration: 0.1s;
+}
+
+.tags-container li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.tags-container li a:visited {
+    color: var(--text-color);
+}
+
 /* ---------------------------------------- */
 
 .recipe-section {
