@@ -30,13 +30,48 @@ async function getCurrentRecipe() {
 
     const resultRecipe = await recipesTab();
     const currentRecipe = resultRecipe.find(recipe => recipe.id == recipeId);
+    if (currentRecipe === undefined) {
+        console.error("Recipe not found");
+        window.location.href = "index.html";
+    }
+
     return currentRecipe;
 };
 
 // -------------------------------------------------------------------------------- //
 
+async function getAuthorNameById(authorId) {
+    const authorsTab = async () => {
+        try {
+            const response = await fetch('./data/authors.json');
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error(error);
+            return null;
+        }
+    };
+
+    const authors = await authorsTab();
+
+    if (authorId === undefined || authors === null) {
+        console.error("Error: Get author name by id");
+        return undefined;
+    }
+
+    const currentAuthor = authors["authors"].find(author => author.id == authorId);
+    if (currentAuthor === undefined) {
+        console.error("Author not found");
+        return "Unknown author";
+    }
+
+    return currentAuthor.name;
+}
+
+// -------------------------------------------------------------------------------- //
+
 document.addEventListener("DOMContentLoaded", () => {
-    getCurrentRecipe().then((currentRecipe) => {
+    getCurrentRecipe().then(async (currentRecipe) => {
         const pageTitle = document.getElementById('pageTitle');
         pageTitle.innerHTML = `${currentRecipe.name} | Kocham Gotować`;
 
@@ -51,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         imageContainer.innerHTML = `<img src=${currentRecipe.image} alt="Dish" id="recipeImage">`;
         nameContainer.innerHTML = currentRecipe.name;
-        infoContainer.innerHTML = generateInfoList(currentRecipe);
+        infoContainer.innerHTML = await generateInfoList(currentRecipe);
         tagsContainer.innerHTML = generateTagsList(currentRecipe.tags);
         descriptionContainer.innerHTML = `<p>${currentRecipe.description}</p>`;
         portionsQuantity.innerHTML = getPotionQuantity(currentRecipe.portions);
@@ -62,8 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // -------------------------------------------------------------------------------- //
 
-function generateInfoList(recipe) {
-    const author = recipe.author;
+async function generateInfoList(recipe) {
+    let author = recipe.author;
+    const authorId = recipe.authorId;
     const creationDate = new Date(recipe.date);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = creationDate.toLocaleDateString(undefined, options);
@@ -71,8 +107,25 @@ function generateInfoList(recipe) {
     
     let htmlString = "";
 
-    if(author !== undefined) {
-        htmlString += `<li><i class="fa-solid fa-user"></i> ${author}</li>`;
+    if(author === undefined && authorId === undefined){
+        console.log("Error: Undefined author and authorId");
+        htmlString += `<li><i class="fa-solid fa-user"></i>Unknow author</li>`;
+    }
+    else {
+        if(author === undefined && authorId !== undefined){
+            console.log("Loading author name...");
+            author = await getAuthorNameById(authorId);
+            console.log("Author name: ", author);
+        }
+
+        if (authorId !== undefined && author !== undefined) {
+            htmlString += `<li><i class="fa-solid fa-user"></i> <a href="author-showcase.html?id=${authorId}">${author}</a></li>`;
+        }
+        
+        if (authorId === undefined && author !== undefined) {
+            console.log("Error: Undefined authorId");
+            htmlString += `<li><i class="fa-solid fa-user"></i> ${author}</li>`;
+        }
     }
 
     if(creationDate !== undefined) {
@@ -98,7 +151,6 @@ function getPotionQuantity(portions) {
 
     return `${quantity} ${unit}`;
 }
-
 
 // -------------------------------------------------------------------------------- //
 
