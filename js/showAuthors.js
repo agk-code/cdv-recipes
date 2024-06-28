@@ -18,16 +18,18 @@ const showAuthors = async () => {
     const authorsHtml = firstFiveAuthors.map(author => {
 
         return `
-            <div class="author">
-                <div class="authors-avatar">
-                    <div class="our-authors__icon">
-                        <i class="icon icon-verified"></i>
+                <div class="author">
+                    <a href="/cdv-recipes/author-showcase.html?id=${author.id}" class="entry-more-link">
+                    <div class="authors-avatar">
+                        <div class="our-authors__icon">
+                            <i class="icon icon-verified"></i>
+                        </div>
+                        <img class="author-picture" src="${author.profilePicture}" alt="${author.name}">
                     </div>
-                    <img class="author-picture" src="${author.profilePicture}" alt="${author.name}">
+                    <h2 class="author-name">${author.name}</h2>
+                    <p class="author-biography">${author.biography}</p>
+                    </a>
                 </div>
-                <h2 class="author-name">${author.name}</h2>
-                <p class="author-biography">${author.biography}</p>
-            </div>
         `;
     });
 
