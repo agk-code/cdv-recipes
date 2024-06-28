@@ -179,7 +179,7 @@ function generateTagsList(tags) {
     }
     return tags.map(tag => {
         return `
-            <li>${tag}</li>
+            <li><a href="/search.html?query=${tag}">${tag}</a></li>
         `;
     }).join('');
 }
