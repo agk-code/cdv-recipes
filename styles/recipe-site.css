@@ -2,6 +2,8 @@
     --background-color: #f2f2f2;
     --text-color: #333;
     --tags-background-color: #5ba4752a;
+    --theme-color-hover: #5ba47564;
+    --theme-color: #5ba475;
 
     --elements-margin: 20px;
     --blocks-border-radius: 16px;
@@ -174,6 +176,50 @@
     margin: 0;
     padding: 0;
     margin-top: var(--elements-margin);
+}
+
+/* ---------------------------------------- */
+
+.recipe-name-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.recipe-bookmark-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;;
+    margin-left: var(--elements-margin);
+    padding-top: 6px;
+}
+
+.recipe-bookmark-container input {
+    display: none;
+}
+
+.recipe-bookmark-container label {
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.recipe-bookmark-container label:hover {
+    color: var(--theme-color-hover);
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.recipe-bookmark-container input:active {
+    opacity: 0.5;
+    transition-duration: 0.1s;
+}
+
+.recipe-bookmark-container input:checked + label {
+    transition-duration: 0.3s;
+    color: var(--theme-color);
+    opacity: 1;
 }
 
 /* ---------------------------------------- */
