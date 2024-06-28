@@ -84,7 +84,7 @@ function tagsEventsListeners() {
             tag.innerHTML = `<li>${tag_str}</li>`;
 
             const button = document.createElement("button");
-            button.className = "remove-element-button";
+            button.className = "list-action-button";
             button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
             button.addEventListener("click", removeTagEvent);
             tag.appendChild(button);
@@ -103,6 +103,16 @@ function removeTagEvent() {
 // -------------------------------------------------------------------------------- //
 
 function ingredientsEventsListeners() {
+    document.getElementById("ingredientInputFieldQuantity").addEventListener("change", () => {
+        const value = document.getElementById("ingredientInputFieldQuantity").value;
+        if(value > 1500) {
+            document.getElementById("ingredientInputFieldQuantity").value = 1000;
+        }
+        if(value < 0) {
+            document.getElementById("ingredientInputFieldQuantity").value = 0;
+        }
+    });
+
     document.getElementById("addIngredientButton").addEventListener("click", () => {
         const ingredientNameContainer = document.getElementById("ingredientInputFieldName");
         const ingredientQuantityContainer = document.getElementById("ingredientInputFieldQuantity");
@@ -136,11 +146,18 @@ function ingredientsEventsListeners() {
             row.innerHTML = row_html_str;
             
             // Add a button to remove the ingredient
-            const button = document.createElement("button");
-            button.className = "remove-element-button";
-            button.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
-            button.addEventListener("click", removeIngredientEvent);
-            row.appendChild(button);
+            const removeButton = document.createElement("button");
+            removeButton.className = "list-action-button";
+            removeButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+            removeButton.addEventListener("click", removeIngredientEvent);
+            row.appendChild(removeButton);
+
+            // Add a button to move the ingredient up
+            const moveUpButton = document.createElement("button");
+            moveUpButton.className = "list-action-button";
+            moveUpButton.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+            moveUpButton.addEventListener("click", moveIngredientUpEvent);
+            row.appendChild(moveUpButton);
 
             // TODO: Add a button to edit the ingredient order on the list
 
@@ -152,6 +169,16 @@ function ingredientsEventsListeners() {
             ingredientQuantityContainer.value = "";
         }
     });
+}
+
+function moveIngredientUpEvent() {
+    const row = this.parentElement;
+    const table = row.parentElement;
+    const previousRow = row.previousElementSibling;
+
+    if (previousRow) {
+        table.insertBefore(row, previousRow);
+    }
 }
 
 function removeIngredientEvent() {
