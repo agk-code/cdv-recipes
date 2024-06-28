@@ -1,4 +1,5 @@
 let generatingRecipeError = false;
+let recipeJSON = {};
 
 // -------------------------------------------------------------------------------- //
 
@@ -6,13 +7,33 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("saveRecipeButton").addEventListener("click", () => {
         console.log("Saving recipe...");
         const recipe = generateRecipeJSON();
+        const previewButton = document.getElementById("previewRecipeButton");
         
         if(recipe === null) {
             console.log("Error while generating recipe JSON");
+            recipeJSON = null;
+            previewButton.setAttribute("disabled", "true");
             return;
         }
 
         console.log("New recipe JSON: ", recipe);
+        recipeJSON = recipe;
+
+        previewButton.removeAttribute("disabled");
+    });
+
+    const previewButton = document.getElementById("previewRecipeButton");
+    previewButton.setAttribute("disabled", "true");
+
+    previewButton.addEventListener("click", () => {
+        console.log("Previewing recipe...");
+
+        if(recipeJSON == {} || recipeJSON == null) {
+            console.log("Error while generating recipe JSON");
+            return;
+        }
+
+        window.open(`recipe.html?recipeJSON=${JSON.stringify(recipeJSON)}`, "_blank");
     });
 });
 
@@ -144,7 +165,9 @@ function getRecipeImage() {
         return "images/logo.png";
     }
 
-    return `images/${image.name}`;
+    const imageAbsolutePath = URL.createObjectURL(image);
+
+    return imageAbsolutePath;
 }
 
 // -------------------------------------------------------------------------------- //
