@@ -63,7 +63,7 @@ const addFilterEventListeners = (params) => {
 
     // Get all active filters
     const activeFilters = Array.from(filterButtons)
-      .filter((button) => button.classList.contains("active") && button.textContent !== "Wszystkie")
+      .filter((button) => button.classList.contains("active") && button.id !== "allIngredients")
       .map((button) => button.textContent);
 
     // Show recipes based on the active filters
