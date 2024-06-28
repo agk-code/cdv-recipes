@@ -1,7 +1,9 @@
 const recipeId = new URLSearchParams(window.location.search).get('id');
 console.log("Recipe_id: ", recipeId);
 
-if(recipeId === null) {
+const urlRecipeJSON = new URLSearchParams(window.location.search).get('recipeJSON');
+
+if(recipeId === null && urlRecipeJSON === null) {
     window.location.href = "index.html";
 }
 
@@ -20,35 +22,42 @@ const recipesTab = () => fetch('./data/recipes.json')
 // -------------------------------------------------------------------------------- //
 
 async function getCurrentRecipe() {
-    // console.log("Loading current recipe...");
+    console.log("Loading current recipe...");
+    if (urlRecipeJSON !== null) {
+        const recipeJSON = JSON.parse(urlRecipeJSON);
+        return recipeJSON;
+    }
+
     const resultRecipe = await recipesTab();
     const currentRecipe = resultRecipe.find(recipe => recipe.id == recipeId);
-    // console.log("Current recipe: ", currentRecipe);
     return currentRecipe;
 };
 
 // -------------------------------------------------------------------------------- //
 
-getCurrentRecipe().then((currentRecipe) => {
-    injectRecipeNameToTitleAndURL(currentRecipe);
+document.addEventListener("DOMContentLoaded", () => {
+    getCurrentRecipe().then((currentRecipe) => {
+        const pageTitle = document.getElementById('pageTitle');
+        pageTitle.innerHTML = `${currentRecipe.name} | Kocham Gotować`;
 
-    const imageContainer = document.querySelector('#imageContainer');
-    const nameContainer = document.querySelector('#nameContainer');
-    const infoContainer = document.querySelector('#infoContainer');
-    const tagsContainer = document.querySelector('#tagsContainer');
-    const descriptionContainer = document.querySelector('#descriptionContainer');
-    const portionsQuantity = document.querySelector('#portionsQuantity');
-    const ingredientsContainer = document.querySelector('#ingredientsContainer');
-    const preparationContainer = document.querySelector('#preparationContainer');
+        const imageContainer = document.querySelector('#imageContainer');
+        const nameContainer = document.querySelector('#nameContainer');
+        const infoContainer = document.querySelector('#infoContainer');
+        const tagsContainer = document.querySelector('#tagsContainer');
+        const descriptionContainer = document.querySelector('#descriptionContainer');
+        const portionsQuantity = document.querySelector('#portionsQuantity');
+        const ingredientsContainer = document.querySelector('#ingredientsContainer');
+        const preparationContainer = document.querySelector('#preparationContainer');
 
-    imageContainer.innerHTML = `<img src=${currentRecipe.image} alt="Dish" id="recipeImage">`;
-    nameContainer.innerHTML = currentRecipe.name;
-    infoContainer.innerHTML = generateInfoList(currentRecipe);
-    tagsContainer.innerHTML = generateTagsList(currentRecipe.tags);
-    descriptionContainer.innerHTML = `<p>${currentRecipe.description}</p>`;
-    portionsQuantity.innerHTML = getPotionQuantity(currentRecipe.portions);
-    ingredientsContainer.innerHTML = generateIngredientsList(currentRecipe.ingredients);
-    preparationContainer.innerHTML = generatePreparationList(currentRecipe.preparation);
+        imageContainer.innerHTML = `<img src=${currentRecipe.image} alt="Dish" id="recipeImage">`;
+        nameContainer.innerHTML = currentRecipe.name;
+        infoContainer.innerHTML = generateInfoList(currentRecipe);
+        tagsContainer.innerHTML = generateTagsList(currentRecipe.tags);
+        descriptionContainer.innerHTML = `<p>${currentRecipe.description}</p>`;
+        portionsQuantity.innerHTML = getPotionQuantity(currentRecipe.portions);
+        ingredientsContainer.innerHTML = generateIngredientsList(currentRecipe.ingredients);
+        preparationContainer.innerHTML = generatePreparationList(currentRecipe.preparation);
+    });
 });
 
 // -------------------------------------------------------------------------------- //
