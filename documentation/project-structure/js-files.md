@@ -53,6 +53,7 @@ search.js
 
 filters.js
 - Skrypt odpowiada za logikę umoliwiającą wygodnie przeszukiwanie kategorii względem wybranych przez uzytkownika filtrów.
+Sktypr zbiera informacje na temat wybranych filtrow i zarzadza wyswietlaniem konkretnych przepisow uzytkownikowi na podstronie kategorii.
 
 
 
