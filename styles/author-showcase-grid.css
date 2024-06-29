@@ -36,8 +36,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dbdbdb;
-    border: #dbdbdb solid 1px;
+    background-color: #f2f2f2;
+    border: #f2f2f2 solid 1px;
     border-radius: 8px;
     padding: 10px;
 }
@@ -47,8 +47,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dbdbdb;
-    border: #dbdbdb solid 1px;
+    background-color: #f2f2f2;
+    border: #f2f2f2 solid 1px;
     border-radius: 8px;
     padding: 10px;
 }
@@ -67,11 +67,19 @@
 .author-biography {
     text-align: left;
     margin: 10px 10%;
-    background-color: #dbdbdb;
+    background-color: #f2f2f2;
     border-radius: 16px;
-    border: #dbdbdb solid 1px;
+    border: #f2f2f2 solid 1px;
     border-radius: 8px;
     padding: 40px;
+}
+
+.authors-recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 1rem;
 }
 
 /* Mobile Styles */

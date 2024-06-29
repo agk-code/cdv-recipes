@@ -15,7 +15,7 @@ if(currentAuthorId === null) {
 }
 
 
-const recipes = () => fetch('./data/recipes.json')
+const recipesAuthorPage = () => fetch('./data/recipes.json')
     .then(response => response.json())
     .then(data => data)
     .catch(error => {
@@ -25,15 +25,15 @@ const recipes = () => fetch('./data/recipes.json')
 
 
 const getAuthorsRecipes = (recipes, currentAuthorId) => {
-    const selected = recipes.find(recipe => recipe.authorId == currentAuthorId);
+    const selected = recipes.filter(recipe => recipe.authorId == currentAuthorId);
     console.log("Selected: ", selected);
     return selected;
 };
 
 
-const generateRecipes = (recipes) => {
+const generateAuthorsRecipes = (recipes) => {
     console.log("Recipes for generation: ", recipes);
-    return Object.values(recipes).map(recipe => (
+    return recipes.map(recipe => (
         `
             <div class="recipe">
                 <a href="${"recipe.html?id=" + recipe.id}">
@@ -46,13 +46,13 @@ const generateRecipes = (recipes) => {
     ));
 };
 
-const showRecipes = async () => {
-    const resultRecipes = await recipes();
+const showAuthorsRecipes = async () => {
+    const resultRecipes = await recipesAuthorPage();
     const authorRecipes = getAuthorsRecipes(resultRecipes, currentAuthorId);
 
-    const recipeContainers = document.querySelectorAll('.recipes-container');
+    const recipeContainers = document.querySelectorAll('.authors-recipes-container');
 
-    const recipesHtml = generateRecipes(authorRecipes);
+    const recipesHtml = generateAuthorsRecipes(authorRecipes);
 
     recipeContainers[0].innerHTML = recipesHtml.join('');
 
@@ -91,5 +91,5 @@ const showAuthor = async () => {
     authorsContainer.innerHTML = authorsHtml;
 })());
 
-showRecipes();
+showAuthorsRecipes();
 
