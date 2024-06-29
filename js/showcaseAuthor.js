@@ -25,7 +25,7 @@ const recipes = () => fetch('./data/recipes.json')
 
 
 const getAuthorsRecipes = (recipes, currentAuthorId) => {
-    const selected = recipes.find(recipe => recipe.authorId == currentAuthorId);
+    const selected = recipes.filter(recipe => recipe.authorId == currentAuthorId);
     console.log("Selected: ", selected);
     return selected;
 };
@@ -33,7 +33,7 @@ const getAuthorsRecipes = (recipes, currentAuthorId) => {
 
 const generateRecipes = (recipes) => {
     console.log("Recipes for generation: ", recipes);
-    return Object.values(recipes).map(recipe => (
+    return recipes.map(recipe => (
         `
             <div class="recipe">
                 <a href="${"recipe.html?id=" + recipe.id}">
