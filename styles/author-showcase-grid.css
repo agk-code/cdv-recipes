@@ -74,6 +74,14 @@
     padding: 40px;
 }
 
+.authors-recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 1rem;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
 
