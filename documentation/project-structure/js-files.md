@@ -36,9 +36,9 @@ showcaseAuthor.js
 
 funkcje:
 funkcja showAuthor generuje i wyswietla dane aktualnie przedstawianego autora,
-funckje authors oraz recipes wczytuja dnae z plików authors.json oraz recipes.json
-nastepnie funkcja get authorsRecipes wyciaga tylko potrzebne do wygenerowania przepisy aktualnie wyswietlanego na stronie autora,
-nastepnie przepisy sa generowane przez generateRecipes oraz wyswietlane funkcją showRecipes
+funckje authors oraz recipesAuthorPage wczytuja dnae z plików authors.json oraz recipes.json
+nastepnie funkcja getAuthorsRecipes wyciaga tylko potrzebne do wygenerowania przepisy aktualnie wyswietlanego na stronie autora,
+nastepnie przepisy sa generowane przez generateAuthorsRecipes oraz wyswietlane funkcją showAuthorsRecipes
 
 
 
@@ -51,9 +51,14 @@ search.js
 - Skrypt odpowiedzialny za uruchomienie wyszukiwania przepisów z paska nawigacyjnego
 
 
+filters.js
+- Skrypt odpowiada za logikę umoliwiającą wygodnie przeszukiwanie kategorii względem wybranych przez uzytkownika filtrów.
+
+
 
 mobileMenu.js
 - Skrypt odpowiedzialny za zmiane atrybotuw klasowych dla generowania i wyswietlanie elementow nawigacyjnych menu dla urzadzen mobilnych.
+Skrypt zbiera informacje o przepisach oraz wybranych filtrach i na tej podstawie zarządza wyświetlanymi uytkownikowi przepisami, widocznymi na podstronie kategorii.
 
 
 
