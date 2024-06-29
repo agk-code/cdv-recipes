@@ -27,24 +27,38 @@
         ],
         "description": "Zupa pomidorowa to jedna z najpopularniejszych zup w Polsce. Jest to danie, które zawsze smakuje wyśmienicie, a przygotowanie go nie zajmuje wiele czasu.",
         "preparation": [
-                "Pomidory sparzamy wrzątkiem, obieramy ze skórki i kroimy w kostkę. Następnie wrzucamy je do garnka, zalewamy wodą i gotujemy na małym ogniu przez około 20 minut. Po tym czasie zupę miksujemy na gładki krem, doprawiamy solą i gotujemy jeszcze przez kilka minut. Podajemy z grzankami lub śmietaną",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a malesuada dui, sit amet condimentum odio. Nam id metus congue, cursus est et, faucibus orci. Proin nec faucibus est. Donec elementum interdum gravida. Nullam vehicula arcu sit amet nisi varius hendrerit. Vivamus lacus quam, lacinia eu fermentum non, dignissim ac leo. Etiam velit ante, vestibulum non gravida at, efficitur eu neque. Maecenas et tempor dolor. Nullam vulputate nec dolor vel ultricies.",
-                "Duis tincidunt risus sed diam iaculis aliquam. Donec lectus elit, pharetra eu orci non, varius suscipit mauris. Aliquam et suscipit libero, vitae scelerisque turpis. Mauris sit amet orci elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper metus non nibh elementum, nec malesuada felis molestie. Etiam porta, dui vestibulum iaculis faucibus, dui orci ultricies tortor, nec pharetra nulla leo a nisi. Aliquam erat volutpat. Phasellus ultrices euismod dolor sit amet gravida. Sed vitae odio quis risus consequat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla a commodo leo. Nulla at venenatis nisi.",
-                "Curabitur aliquam ante non pulvinar consectetur. Morbi sagittis congue pellentesque. Sed et sem aliquet, dapibus nunc bibendum, consequat dui. Nam sed volutpat ante. Quisque molestie tortor eros, eu rhoncus tellus congue sed. Integer nisi erat, vehicula quis auctor in, ultrices vel felis. Morbi id urna vitae sapien convallis pellentesque. Cras nec libero eleifend, lobortis magna interdum, dictum nisi. Donec justo velit, luctus sed libero eu, consequat suscipit eros. Maecenas tempor felis sed eros molestie, porttitor dignissim purus fringilla. Sed eleifend ligula non nisi pharetra, in convallis lectus faucibus. Sed sed tortor tellus. Vivamus venenatis consectetur massa sagittis porta. Aenean a pharetra leo, at viverra lorem. Fusce mattis metus in arcu sodales, vel lacinia nulla ullamcorper.",
-                "Fusce imperdiet ex diam, ac lobortis est tincidunt id. Aliquam quis nunc vitae urna elementum consequat sit amet a ligula. Donec dignissim vitae mauris posuere euismod. Ut maximus facilisis urna, id rutrum magna blandit dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus imperdiet urna finibus est tristique, vitae rhoncus felis placerat. Praesent dignissim est eget scelerisque pretium. Sed dignissim ultricies risus accumsan egestas. Nullam gravida ornare dolor, eu blandit diam.",
-                "Pellentesque at laoreet neque, quis varius augue. Sed eget sapien et nibh vestibulum feugiat. Integer pretium convallis augue, vulputate rhoncus nulla sagittis sed. In hac habitasse platea dictumst. Quisque lorem dolor, pulvinar tincidunt vestibulum eu, dictum tincidunt nisl. Nam fringilla accumsan nisi, ac auctor ex posuere et. Vivamus non sollicitudin ipsum. Nullam sagittis ac massa at dictum. Maecenas dapibus dictum maximus. Morbi dignissim lobortis semper. Proin suscipit maximus feugiat. Sed est risus, tempus ac libero ac, hendrerit fermentum mauris. Integer non erat aliquam, tincidunt ipsum quis, lobortis augue.", 
-                "Smacznego!"
+            "Pomidory sparzamy wrzątkiem, obieramy ze skórki i kroimy w kostkę. Następnie wrzucamy je do garnka, zalewamy wodą i gotujemy na małym ogniu przez około 20 minut. Po tym czasie zupę miksujemy na gładki krem, doprawiamy solą i gotujemy jeszcze przez kilka minut. Podajemy z grzankami lub śmietaną",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a malesuada dui, sit amet condimentum odio. Nam id metus congue, cursus est et, faucibus orci. Proin nec faucibus est. Donec elementum interdum gravida. Nullam vehicula arcu sit amet nisi varius hendrerit. Vivamus lacus quam, lacinia eu fermentum non, dignissim ac leo. Etiam velit ante, vestibulum non gravida at, efficitur eu neque. Maecenas et tempor dolor. Nullam vulputate nec dolor vel ultricies.",
+            "Duis tincidunt risus sed diam iaculis aliquam. Donec lectus elit, pharetra eu orci non, varius suscipit mauris. Aliquam et suscipit libero, vitae scelerisque turpis. Mauris sit amet orci elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper metus non nibh elementum, nec malesuada felis molestie. Etiam porta, dui vestibulum iaculis faucibus, dui orci ultricies tortor, nec pharetra nulla leo a nisi. Aliquam erat volutpat. Phasellus ultrices euismod dolor sit amet gravida. Sed vitae odio quis risus consequat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla a commodo leo. Nulla at venenatis nisi.",
+            "Curabitur aliquam ante non pulvinar consectetur. Morbi sagittis congue pellentesque. Sed et sem aliquet, dapibus nunc bibendum, consequat dui. Nam sed volutpat ante. Quisque molestie tortor eros, eu rhoncus tellus congue sed. Integer nisi erat, vehicula quis auctor in, ultrices vel felis. Morbi id urna vitae sapien convallis pellentesque. Cras nec libero eleifend, lobortis magna interdum, dictum nisi. Donec justo velit, luctus sed libero eu, consequat suscipit eros. Maecenas tempor felis sed eros molestie, porttitor dignissim purus fringilla. Sed eleifend ligula non nisi pharetra, in convallis lectus faucibus. Sed sed tortor tellus. Vivamus venenatis consectetur massa sagittis porta. Aenean a pharetra leo, at viverra lorem. Fusce mattis metus in arcu sodales, vel lacinia nulla ullamcorper.",
+            "Fusce imperdiet ex diam, ac lobortis est tincidunt id. Aliquam quis nunc vitae urna elementum consequat sit amet a ligula. Donec dignissim vitae mauris posuere euismod. Ut maximus facilisis urna, id rutrum magna blandit dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus imperdiet urna finibus est tristique, vitae rhoncus felis placerat. Praesent dignissim est eget scelerisque pretium. Sed dignissim ultricies risus accumsan egestas. Nullam gravida ornare dolor, eu blandit diam.",
+            "Pellentesque at laoreet neque, quis varius augue. Sed eget sapien et nibh vestibulum feugiat. Integer pretium convallis augue, vulputate rhoncus nulla sagittis sed. In hac habitasse platea dictumst. Quisque lorem dolor, pulvinar tincidunt vestibulum eu, dictum tincidunt nisl. Nam fringilla accumsan nisi, ac auctor ex posuere et. Vivamus non sollicitudin ipsum. Nullam sagittis ac massa at dictum. Maecenas dapibus dictum maximus. Morbi dignissim lobortis semper. Proin suscipit maximus feugiat. Sed est risus, tempus ac libero ac, hendrerit fermentum mauris. Integer non erat aliquam, tincidunt ipsum quis, lobortis augue.",
+            "Smacznego!"
         ],
         "category": "zupy",
         "date": "2005-04-02",
         "authorId": 0,
-        "tags": ["pomidory", "zupa", "obiad", "danie główne", "szybkie danie", "zdrowe jedzenie", "wegetariańskie", "wegańskie", "bezglutenowe", "bezlaktozowe", "bezmięsne", "bezjajeczne", "danie miesne"],       
+        "tags": [
+            "pomidory",
+            "zupa",
+            "obiad",
+            "danie główne",
+            "szybkie danie",
+            "zdrowe jedzenie",
+            "wegetariańskie",
+            "wegańskie",
+            "bezglutenowe",
+            "bezlaktozowe",
+            "bezmięsne",
+            "bezjajeczne",
+            "danie miesne"
+        ],
         "preparation_time": "30 min",
         "portions": {
             "quantity": 4,
             "unit": "porcje"
         },
-        "author": "Paweł2137"
+        "author": "Paweł Kowalski"
     },
     {
         "id": "2",
@@ -90,7 +104,18 @@
         "description": "Pierogi ruskie to tradycyjne polskie danie, które składa się z delikatnego ciasta i nadzienia z ziemniaków, cebuli i sera. Są to jedne z najpopularniejszych pierogów w Polsce i cieszą się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
         "category": "Pierogi",
         "date": "2024-02-15",
-        "authorId": 1
+        "authorId": 1,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "3",
@@ -146,7 +171,18 @@
         "description": "Spaghetti Bolognese to klasyczne włoskie danie, które składa się z makaronu spaghetti i sosu mięsnego. Jest to jedno z najbardziej popularnych dań kuchni włoskiej i cieszy się dużą popularnością na całym świecie.",
         "category": "Makarony",
         "date": "2024-03-10",
-        "authorId": 2
+        "authorId": 2,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "4",
@@ -187,7 +223,18 @@
         "description": "Sałatka Cezar to popularne danie kuchni amerykańskiej, które składa się z sałaty lodowej, grillowanego kurczaka, jajek, grzanek, parmezanu i sosu Cezar. Jest to lekka i smaczna sałatka, która doskonale sprawdza się jako danie główne lub przystawka.",
         "category": "salatki",
         "date": "2024-04-25",
-        "authorId": 3
+        "authorId": 3,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "5",
@@ -228,7 +275,18 @@
         "description": "Kotlet schabowy to tradycyjne polskie danie, które składa się z panierowanego kotleta z mięsa schabowego. Jest to jedno z najbardziej popularnych dań mięsnych w Polsce i cieszy się dużą popularnością zarówno wśród dzieci, jak i dorosłych.",
         "category": "miesa",
         "date": "2024-05-20",
-        "authorId": 4
+        "authorId": 4,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "6",
@@ -284,7 +342,18 @@
         "description": "Tarta z warzywami to lekkie i smaczne danie, które składa się z chrupiącego ciasta francuskiego i warzyw takich jak papryka, bakłażan, cukinia i cebula. Jest to idealne danie dla osób preferujących wegetariańską kuchnię.",
         "category": "tarty",
         "date": "2024-06-01",
-        "authorId": 5
+        "authorId": 5,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "7",
@@ -335,7 +404,18 @@
         "description": "Krem z dyni to aromatyczne danie, które składa się z puree z dyni, cebuli, czosnku, bulionu warzywnego i śmietany. Jest to idealne danie na chłodne jesienne i zimowe dni.",
         "category": "zupy",
         "date": "2024-01-20",
-        "authorId": 6
+        "authorId": 6,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "8",
@@ -396,7 +476,18 @@
         "description": "Risotto z grzybami to klasyczne włoskie danie, które składa się z ryżu arborio, grzybów, cebuli, czosnku, bulionu warzywnego, białego wina i parmezanu. Jest to aromatyczne i sycące danie, które doskonale sprawdza się jako danie główne.",
         "category": "Makarony",
         "date": "2024-02-01",
-        "authorId": 7
+        "authorId": 7,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "9",
@@ -447,7 +538,18 @@
         "description": "Krewetki w sosie czosnkowym to smaczne danie, które składa się z krewetek smażonych na maśle z dodatkiem czosnku, śmietany i soku z cytryny. Jest to danie o intensywnym smaku i aromacie, które doskonale sprawdza się jako przystawka lub danie główne.",
         "category": "Owoce morza",
         "date": "2024-03-25",
-        "authorId": 8
+        "authorId": 8,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "10",
@@ -488,7 +590,18 @@
         "description": "Tiramisu to klasyczne włoskie danie, które składa się z biszkoptów nasączonych kawą, kremu z serka mascarpone i jajek oraz posypane kakao. Jest to deser o delikatnym smaku i kremowej konsystencji, który doskonale kończy każdy posiłek.",
         "category": "desery",
         "date": "2024-04-10",
-        "authorId": 9
+        "authorId": 9,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "11",
@@ -534,7 +647,18 @@
         "description": "Żurek to tradycyjna polska zupa, której podstawą jest żur. Podawany z kiełbasą, jajkiem i ziemniakami, żurek jest jednym z ulubionych dań wielkanocnych.",
         "category": "zupy",
         "date": "2024-04-01",
-        "authorId": 10
+        "authorId": 10,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "12",
@@ -580,7 +704,18 @@
         "description": "Placki ziemniaczane to prosty i smaczny przepis na danie z ziemniaków. Są chrupiące na zewnątrz i miękkie w środku, idealne na obiad lub kolację.",
         "category": "przekaski",
         "date": "2024-02-20",
-        "authorId": 1
+        "authorId": 1,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "13",
@@ -626,7 +761,18 @@
         "description": "Gołąbki to tradycyjne polskie danie składające się z liści kapusty nadziewanych mięsem mielonym i ryżem, duszone w sosie pomidorowym.",
         "category": "dania glowne",
         "date": "2024-03-05",
-        "authorId": 2
+        "authorId": 2,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "14",
@@ -672,7 +818,18 @@
         "description": "Naleśniki z serem to pyszne danie, które składa się z cienkich placków wypełnionych słodkim serem. Idealne na śniadanie, deser lub kolację.",
         "category": "desery",
         "date": "2024-01-15",
-        "authorId": 3
+        "authorId": 3,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "15",
@@ -718,7 +875,18 @@
         "description": "Barszcz czerwony to klasyczna polska zupa, której podstawą są buraki. Podawany na gorąco, idealny na wigilijną kolację.",
         "category": "zupy",
         "date": "2024-12-24",
-        "authorId": 4
+        "authorId": 4,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "16",
@@ -764,7 +932,18 @@
         "description": "Sernik to jedno z najbardziej znanych polskich ciast. Składa się z kremowej masy serowej na kruchym spodzie, często z dodatkiem skórki pomarańczowej.",
         "category": "desery",
         "date": "2024-04-15",
-        "authorId": 5
+        "authorId": 5,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "17",
@@ -825,7 +1004,18 @@
         "description": "Kaszotto z warzywami to zdrowe i sycące danie, które składa się z kaszy jęczmiennej i świeżych warzyw. Idealne na obiad lub kolację.",
         "category": "dania-glowne",
         "date": "2024-05-10",
-        "authorId": 6
+        "authorId": 6,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "18",
@@ -891,7 +1081,18 @@
         "description": "Gulasz węgierski to aromatyczne i pikantne danie z wołowiny, papryki i pomidorów. Podawany z chlebem lub kluskami, doskonale rozgrzewa w chłodne dni.",
         "category": "dania-glowne",
         "date": "2024-03-30",
-        "authorId": 7
+        "authorId": 7,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "19",
@@ -942,7 +1143,18 @@
         "description": "Pieczeń rzymska to smaczne danie z mięsa mielonego, jajek i przypraw, pieczone w piekarniku. Idealne na obiad lub kolację.",
         "category": "dania-glowne",
         "date": "2024-04-05",
-        "authorId": 8
+        "authorId": 8,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "20",
@@ -993,8 +1205,19 @@
         "description": "Makowiec to tradycyjne polskie ciasto świąteczne, składające się z drożdżowego ciasta i masy makowej. Doskonałe na Boże Narodzenie.",
         "category": "desery",
         "date": "2024-12-25",
-        "authorId": 9
-    },  
+        "authorId": 9,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
+    },
     {
         "id": "21",
         "name": "Sałatka grecka",
@@ -1049,7 +1272,18 @@
         "description": "Sałatka grecka to lekka i orzeźwiająca sałatka, idealna na letnie dni. Składa się z pomidorów, ogórków, czerwonej cebuli, sera feta i oliwek, doprawiona oliwą z oliwek i oregano.",
         "category": "salatki",
         "date": "2024-06-15",
-        "authorId": 10
+        "authorId": 10,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "22",
@@ -1095,7 +1329,18 @@
         "description": "Chłodnik litewski to idealna zupa na upalne dni. Składa się z buraków, ogórków, rzodkiewki i koperku, zalana kefirem, podawana na zimno.",
         "category": "zupy",
         "date": "2024-07-01",
-        "authorId": 1
+        "authorId": 1,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "23",
@@ -1131,7 +1376,18 @@
         "description": "Lemoniada cytrynowa to orzeźwiający napój, idealny na letnie dni. Składa się z soku z cytryn, wody, cukru i mięty, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-06-20",
-        "authorId": 2
+        "authorId": 2,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "24",
@@ -1172,7 +1428,18 @@
         "description": "Sałatka z arbuzem i fetą to orzeźwiające danie na lato. Kombinacja słodkiego arbuza, słonej fety i świeżej mięty tworzy idealne połączenie smaków.",
         "category": "salatki",
         "date": "2024-07-05",
-        "authorId": 3
+        "authorId": 3,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "25",
@@ -1228,7 +1495,18 @@
         "description": "Gazpacho to hiszpańska zupa pomidorowa podawana na zimno. Jest idealnym daniem na upalne letnie dni, orzeźwiająca i pełna smaków.",
         "category": "zupy",
         "date": "2024-07-10",
-        "authorId": 4
+        "authorId": 4,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "26",
@@ -1264,7 +1542,18 @@
         "description": "Koktajl truskawkowy to szybki i łatwy sposób na orzeźwienie latem. Składa się z truskawek, banana, jogurtu naturalnego i miodu, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-06-25",
-        "authorId": 5
+        "authorId": 5,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "27",
@@ -1315,7 +1604,18 @@
         "description": "Sałatka z krewetkami to lekkie i zdrowe danie idealne na lato. Krewetki, rukola, awokado i pomidory tworzą doskonałe połączenie smaków, doprawione oliwą z oliwek i sokiem z cytryny.",
         "category": "salatki",
         "date": "2024-07-20",
-        "authorId": 6
+        "authorId": 6,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "28",
@@ -1351,7 +1651,18 @@
         "description": "Smoothie mango to egzotyczny i orzeźwiający napój, idealny na lato. Składa się z mango, banana, jogurtu naturalnego i soku pomarańczowego, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-06-30",
-        "authorId": 7
+        "authorId": 7,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "29",
@@ -1397,7 +1708,18 @@
         "description": "Grillowany łosoś z cytryną to lekkie i zdrowe danie idealne na letnie grillowanie. Łosoś doprawiony czosnkiem, koperkiem i cytryną jest soczysty i pełen smaku.",
         "category": "ryby",
         "date": "2024-07-15",
-        "authorId": 8
+        "authorId": 8,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "30",
@@ -1433,7 +1755,18 @@
         "description": "Sorbet malinowy to orzeźwiający deser idealny na lato. Składa się z malin, cukru i wody, doprawiony sokiem z cytryny, podawany z listkami mięty.",
         "category": "desery",
         "date": "2024-07-25",
-        "authorId": 9
+        "authorId": 9,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "31",
@@ -1474,7 +1807,18 @@
         "description": "Caprese to klasyczna włoska sałatka składająca się z pomidorów, mozzarelli i świeżej bazylii, skropiona oliwą z oliwek i przyprawiona solą morską oraz pieprzem.",
         "category": "salatki",
         "date": "2024-08-01",
-        "authorId": 10
+        "authorId": 10,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "32",
@@ -1510,7 +1854,18 @@
         "description": "Smoothie jagodowe to orzeźwiający napój idealny na lato. Składa się z jagód, banana, jogurtu greckiego i miodu, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-08-05",
-        "authorId": 1
+        "authorId": 1,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "33",
@@ -1576,7 +1931,18 @@
         "description": "Sałatka z quinoa to zdrowe i pożywne danie, idealne na lato. Składa się z quinoa, pomidorów, ogórka, awokado, kukurydzy i czarnej fasoli, doprawiona sokiem z limonki i oliwą z oliwek.",
         "category": "salatki",
         "date": "2024-08-10",
-        "authorId": 2
+        "authorId": 2,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "34",
@@ -1607,7 +1973,18 @@
         "description": "Sorbet cytrynowy to orzeźwiający deser, idealny na letnie dni. Składa się z soku z cytryn, cukru i wody, podawany z listkami mięty.",
         "category": "desery",
         "date": "2024-08-15",
-        "authorId": 3
+        "authorId": 3,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "35",
@@ -1653,7 +2030,18 @@
         "description": "Grillowane warzywa to lekkie i zdrowe danie, idealne na letnie grillowanie. Składa się z papryki, cukinii i bakłażana, doprawione oliwą z oliwek, solą, pieprzem i ziołami prowansalskimi.",
         "category": "przekaski",
         "date": "2024-08-20",
-        "authorId": 4
+        "authorId": 4,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "36",
@@ -1699,7 +2087,18 @@
         "description": "Chłodnik z ogórków to lekka i orzeźwiająca zupa, idealna na letnie dni. Składa się z ogórków, jogurtu naturalnego, czosnku i koperku, doprawiona sokiem z cytryny.",
         "category": "zupy",
         "date": "2024-08-25",
-        "authorId": 5
+        "authorId": 5,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "37",
@@ -1745,7 +2144,18 @@
         "description": "Sałatka z arbuzem i miętą to orzeźwiająca i lekka sałatka, idealna na lato. Kombinacja słodkiego arbuza, słonej fety i świeżej mięty tworzy idealne połączenie smaków.",
         "category": "salatki",
         "date": "2024-08-30",
-        "authorId": 6
+        "authorId": 6,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "38",
@@ -1781,7 +2191,18 @@
         "description": "Smoothie arbuzowe to orzeźwiający napój, idealny na lato. Składa się z arbuza, truskawek, jogurtu naturalnego i miodu, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-08-31",
-        "authorId": 7
+        "authorId": 7,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "39",
@@ -1817,7 +2238,18 @@
         "description": "Lemoniada miętowa to orzeźwiający napój, idealny na lato. Składa się z soku z cytryn, świeżej mięty, wody i cukru, podawany z kostkami lodu.",
         "category": "napoje",
         "date": "2024-09-01",
-        "authorId": 8
+        "authorId": 8,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     },
     {
         "id": "40",
@@ -1868,6 +2300,17 @@
         "description": "Grillowany kurczak z ananasem to lekkie i smaczne danie, idealne na letnie grillowanie. Składa się z grillowanej piersi z kurczaka i kawałków ananasa, doprawionych sokiem z limonki, czosnkiem i kolendrą.",
         "category": "dania-glowne",
         "date": "2024-09-05",
-        "authorId": 9
+        "authorId": 9,
+        "preparation": [
+            "Prepare the ingredients.",
+            "Cook according to the recipe instructions.",
+            "Serve and enjoy."
+        ],
+        "tags": [
+            "easy",
+            "quick",
+            "delicious"
+        ],
+        "preparation_time": "30 min"
     }
 ]
