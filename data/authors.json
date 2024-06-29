@@ -3,7 +3,6 @@
       {
         "id": 1,
         "name": "John Doe",
-        "link": "author_pages/john_doe.html",
         "quote": "With great food comes great joy.",
         "biography": "John Doe to znany szef kuchni i autor książek, znany ze swoich innowacyjnych przepisów i kulinarnych umiejętności. Z ponad 20-letnim doświadczeniem w branży spożywczej, John opublikował kilka bestsellerowych książek kucharskich.",
         "profilePicture": "./images/authors/john_doe.png",
@@ -23,7 +22,6 @@
       {
         "id": 2,
         "name": "Jane Smith",
-        "link": "author_pages/jane_smith.html",
         "quote": "I'm something of a chef myself...",
         "biography": "Jane Smith to znana pisarka kulinarna i twórczyni przepisów. Jej pasja do gotowania i fotografii kulinarnej zdobyła jej wierne grono fanów. Książki kucharskie Jane skupiają się na zdrowych i smacznych posiłkach dla zapracowanych osób.",
         "profilePicture": "./images/authors/jane_smith.png",
@@ -43,7 +41,6 @@
       {
         "id": 3,
         "name": "Michael Johnson",
-        "link": "author_pages/michael_johnson.html",
         "quote": "I came here to cook meals and kick butts, and I'm all out of ingedients.",
         "biography": "Michael Johnson to profesjonalny szef kuchni i bloger kulinarny. Znany ze swojej ekspertyzy w kuchni fusion, Michael był prezentowany w licznych magazynach kulinarnych. Jego książki kucharskie łączą tradycyjne i nowoczesne techniki gotowania.",
         "profilePicture": "./images/authors/michael_johnson.png",
@@ -63,7 +60,6 @@
       {
         "id": 4,
         "name": "Emily Brown",
-        "link": "author_pages/emily_brown.html",
         "quote": "Cook or die, remember?",
         "biography": "Emily Brown to pasjonatka jedzenia i autorka książek kucharskich. Specjalizuje się w przepisach wegańskich i wegetariańskich, które są zarówno zdrowe, jak i smaczne. Książki kucharskie Emily są popularne wśród osób pragnących przyjąć roślinny styl życia.",
         "profilePicture": "./images/authors/emily_brown.png",
@@ -83,7 +79,6 @@
       {
         "id": 5,
         "name": "David Lee",
-        "link": "author_pages/david_lee.html",
         "quote": "You shall not cook!",
         "biography": "David Lee to ekspert kulinarny i autor, który podróżował po świecie, aby odkrywać nowe smaki i techniki gotowania. Jego książki kucharskie odzwierciedlają jego różnorodne doświadczenia kulinarne i oferują czytelnikom smak międzynarodowej kuchni.",
         "profilePicture": "./images/authors/david_lee.png",
@@ -103,7 +98,6 @@
       {
         "id": 6,
         "name": "Sophia Green",
-        "link": "author_pages/sophia_green.html",
         "quote": "Twice the ingredients, double the meal.",
         "biography": "Sophia Green to szefowa kuchni i autorka znana ze swojego innowacyjnego podejścia do gotowania. Łączy tradycyjne przepisy z nowoczesnymi technikami, tworząc unikalne i pełne smaku dania. Jej książki kucharskie są świadectwem jej kreatywności i umiejętności kulinarnych.",
         "profilePicture": "./images/authors/sophia_green.png",
@@ -123,7 +117,6 @@
       {
         "id": 7,
         "name": "Robert White",
-        "link": "author_pages/robert_white.html",
         "quote": "Life is like a box of chocolates. You never know what you get.",
         "biography": "Robert White to profesjonalny szef kuchni i pisarz kulinarny skupiający się na zdrowym odżywianiu. Jego książki kucharskie oferują różnorodne zdrowe przepisy, które są zarówno smaczne, jak i łatwe do przygotowania. Prace Roberta były prezentowane w kilku magazynach o zdrowiu i wellness.",
         "profilePicture": "./images/authors/robert_white.png",
@@ -143,7 +136,6 @@
       {
         "id": 8,
         "name": "Linda White",
-        "link": "author_pages/linda_black.html",
         "quote": "Jesse, we need to cook",
         "biography": "Linda White to znana cukierniczka i autorka książek, znana ze swoich wykwintnych deserów i technik pieczenia. Jej książki kucharskie to niezbędnik dla każdego, kto chce poprawić swoje umiejętności pieczenia i tworzyć imponujące desery.",
         "profilePicture": "./images/authors/linda_black.png",
@@ -163,7 +155,6 @@
       {
         "id": 9,
         "name": "James King",
-        "link": "author_pages/james_king.html",
         "quote": "The grill is dead, long live the grill!",
         "biography": "James King to znany szef kuchni i autor książek kucharskich, specjalizujący się w grillowaniu i barbecue. Jego książki kucharskie oferują różnorodne przepisy dla miłośników mięsa i entuzjastów grillowania. Ekspertyza Jamesa zdobyła mu wierne grono fanów wśród fanów barbecue.",
         "profilePicture": "./images/authors/james_king.png",
@@ -183,7 +174,6 @@
       {
         "id": 10,
         "name": "Anna Lewis",
-        "link": "author_pages/anna_lewis.html",
         "quote": "Only a baker deals in cupcakes!",
         "biography": "Anna Lewis to pisarka kulinarna i twórczyni przepisów, znana ze swoich prostych i smacznych przepisów. Jej książki kucharskie są idealne dla domowych kucharzy, którzy chcą tworzyć smaczne posiłki bez spędzania zbyt wiele czasu w kuchni. Przystępny styl Anny sprawił, że stała się ulubienicą zapracowanych rodzin.",
         "profilePicture": "./images/authors/anna_lewis.png",

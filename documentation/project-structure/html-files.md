@@ -1,8 +1,10 @@
-STURKTURA PROJEKTU - CDV-RECIPES
+STURKTURA PROJEKTU - CDV-RECIPES - HTML
 
 
 HTML
 Struktury pojedynczych stron projektu znajdują się w oddzielnych plikach .html:
+
+
 
 index.html
 - Strona główna.
@@ -41,6 +43,7 @@ Obok listy znajduje się deokładny opis przygotowania dania.
 Jeeli jednak przepis nie przypadł do gustu uytkownikowi, moe łatwo przejśc do następnego korzystając z sekcji "Polecane przepisy" wyświetlanej poniej wybranego wcześniej dania.
 
 
+
 author-showcase.html
 - Strona na której znajdziemy wszlkie informacje dotyczące wybranego autora.
 Na górze strony znajduje się duze zdjecie autora, obok którego widnieje jego imię i nazwisko oraz inspirujący cytat,
@@ -51,9 +54,41 @@ Strona wprowadza uytkownika w klimat i styl tworczosci kulinarnej autora.
 Pod opisem umieszczona jest siatka przepisow danego autora. Wyświetlanych w przystepny dla uzytkownika sposob z miniaturka,
 nazwa i krotkim opisem.
 
+Logo, elementy nawigacyjne oraz stopka pozostają niezmienne względem innych stron projektu.
+
+
 
 category.html
-- 
+- Strona generująca listę przepisów na podstawie wybranej wcześniej kategori.
+To właśnie tu trafiamy wybierając interesującą nas kategorię z paska nawigacyjnego.
+
+Dostępne przepisy umieszczone w znajomych bloczkach mozemy wygodnie filtrować z uzyciem jednego lub wielu tagów.
+
+Logo, elementy nawigacyjne oraz stopka pozostają niezmienne względem innych stron projektu.
 
 
 
+search.html
+- Strona pozwalająca na wyszukiwanie interesujących nas przepisów z uzyciem ich nazwy,
+automatycznie wyświetla w znajomych bloczkach, przepisy,
+które odpowiadają kryteriom wyszukiwania wprowadzonym wcześniej do pola wyszukiwania dostępnego w sekcji nawigacyjnej.
+
+Logo, elementy nawigacyjne oraz stopka pozostają niezmienne względem innych stron projektu.
+
+
+add-recipe.html
+- Strona tworzenia nowego przepisu.
+W tym miejscu autor moze dać wodzę swojej fantazji i wysnuc kolejne kulinarne arcydzielo.
+
+Specjalnie przygotowane pola pozwalają na przypisanie nowemu przepisowi podstawowych informacji takich jak:
+nazwa, czas przygotowania, ilosc porcji, kategoria, opis.
+
+Do nowego przepisu autor moze takze wgrac zdjecie, dopisac tagi oraz dokladna liste skladnikow.
+Na koniec najwazniejsze pole czyli: "przygotowanie",
+w ktrórym autor moę wygodnie opisać proces kulinarny w postaci kroków niezbędnych do wykonania.
+
+Gdyby brakowalo mu inspiracji siegnac moze takze po dostepne nizej "Polecane przepisy",
+które mogą natchnąć go do nowych eksperymentów kulinarnych.
+
+
+Logo, elementy nawigacyjne oraz stopka pozostają niezmienne względem innych stron projektu.
